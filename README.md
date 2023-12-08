@@ -10,6 +10,7 @@ Steps to  Clone
   - havent added sql and jpa dependcies yet.
 -  Go to VS CODE
   - Open folder FRONTEND in vscode.
+  - install react/vite
 
 Tip: You can choose to open entire project in intellij/vscode but having them in seperate apps for development will make it easier to seperate the frontend and backend without distractions. 
 
