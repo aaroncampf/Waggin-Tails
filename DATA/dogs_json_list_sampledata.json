@@ -1,0 +1,1559 @@
+{
+  "animals": [
+    {
+      "id": 69972958,
+      "organization_id": "TX976",
+      "url": "https://www.petfinder.com/dog/buddy-the-elf-69972958/tx/mckinney/collin-county-animal-services-tx976/?referrer_id=53f3fa2b-1718-4633-bb66-02db1820bdd0&utm_source=api&utm_medium=partnership&utm_content=53f3fa2b-1718-4633-bb66-02db1820bdd0",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "American Staffordshire Terrier",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Male",
+      "size": "Large",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "Buddy the Elf",
+      "description": "Hi! I&amp;#39;m Buddy the Elf (1073623) coming straight at you from the North Pole! Just kidding. You&amp;#39;ll find me here...",
+      "organization_animal_id": "20059340-1073623",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-09T16:19:57+0000",
+      "published_at": "2023-12-09T16:19:56+0000",
+      "distance": null,
+      "contact": {
+        "email": "animalshelter@collincountytx.gov",
+        "phone": "(972) 547-7292",
+        "address": {
+          "address1": "4750 Community Ave.",
+          "address2": "Collin County Justice Complex",
+          "city": "McKinney",
+          "state": "TX",
+          "postcode": "75070",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/69972958"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/tx976"
+        }
+      }
+    },
+    {
+      "id": 69972949,
+      "organization_id": "TX1851",
+      "url": "https://www.petfinder.com/dog/buck-sponsored-adoption-69972949/tx/commerce/commerce-animal-shelter-tx1851/?referrer_id=53f3fa2b-1718-4633-bb66-02db1820bdd0&utm_source=api&utm_medium=partnership&utm_content=53f3fa2b-1718-4633-bb66-02db1820bdd0",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Pit Bull Terrier",
+        "secondary": null,
+        "mixed": false,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Black",
+        "secondary": "White / Cream",
+        "tertiary": null
+      },
+      "age": "Adult",
+      "gender": "Male",
+      "size": "Medium",
+      "coat": "Short",
+      "attributes": {
+        "spayed_neutered": false,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": false
+      },
+      "environment": {
+        "children": null,
+        "dogs": true,
+        "cats": null
+      },
+      "tags": [],
+      "name": "Buck (sponsored adoption)",
+      "description": "Buck has been a special dog since he arrived very afraid of everything.  Slowly he has come around and now...",
+      "organization_animal_id": null,
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972949/1/?bust=1702138760&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972949/1/?bust=1702138760&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972949/1/?bust=1702138760&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972949/1/?bust=1702138760"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972949/1/?bust=1702138760&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972949/1/?bust=1702138760&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972949/1/?bust=1702138760&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972949/1/?bust=1702138760"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-09T16:19:22+0000",
+      "published_at": "2023-12-09T16:19:21+0000",
+      "distance": null,
+      "contact": {
+        "email": "ccas.petadoption@gmail.com",
+        "phone": "(903) 886-1160",
+        "address": {
+          "address1": "1203 O'Neal Street",
+          "address2": null,
+          "city": "Commerce",
+          "state": "TX",
+          "postcode": "75428",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/69972949"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/tx1851"
+        }
+      }
+    },
+    {
+      "id": 69972947,
+      "organization_id": "TX2112",
+      "url": "https://www.petfinder.com/dog/gabriel-69972947/tx/tomball/good-lif3-bully-rescue-tx2112/?referrer_id=53f3fa2b-1718-4633-bb66-02db1820bdd0&utm_source=api&utm_medium=partnership&utm_content=53f3fa2b-1718-4633-bb66-02db1820bdd0",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "American Staffordshire Terrier",
+        "secondary": "Mixed Breed",
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Young",
+      "gender": "Male",
+      "size": "Medium",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": true,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": true,
+        "dogs": true,
+        "cats": null
+      },
+      "tags": [],
+      "name": "Gabriel",
+      "description": "GABRIEL BIO:\n-Sweet Pit/staffy mix \n-Little over a year old\n-Male neutered\n-Around 45-50 lbs \n- Good with kids, people...",
+      "organization_animal_id": null,
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972947/1/?bust=1702138743&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972947/1/?bust=1702138743&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972947/1/?bust=1702138743&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972947/1/?bust=1702138743"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972947/2/?bust=1702138745&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972947/2/?bust=1702138745&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972947/2/?bust=1702138745&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972947/2/?bust=1702138745"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972947/3/?bust=1702138745&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972947/3/?bust=1702138745&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972947/3/?bust=1702138745&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972947/3/?bust=1702138745"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972947/4/?bust=1702138746&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972947/4/?bust=1702138746&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972947/4/?bust=1702138746&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972947/4/?bust=1702138746"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972947/5/?bust=1702138746&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972947/5/?bust=1702138746&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972947/5/?bust=1702138746&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972947/5/?bust=1702138746"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972947/6/?bust=1702138747&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972947/6/?bust=1702138747&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972947/6/?bust=1702138747&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972947/6/?bust=1702138747"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972947/1/?bust=1702138743&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972947/1/?bust=1702138743&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972947/1/?bust=1702138743&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972947/1/?bust=1702138743"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-09T16:19:09+0000",
+      "published_at": "2023-12-09T16:19:08+0000",
+      "distance": null,
+      "contact": {
+        "email": "goodlif3adoptions@gmail.com",
+        "phone": null,
+        "address": {
+          "address1": null,
+          "address2": null,
+          "city": "Tomball",
+          "state": "TX",
+          "postcode": "77377",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/69972947"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/tx2112"
+        }
+      }
+    },
+    {
+      "id": 69972936,
+      "organization_id": "KS47",
+      "url": "https://www.petfinder.com/dog/dory-69972936/ks/topeka/helping-hands-humane-society-ks47/?referrer_id=53f3fa2b-1718-4633-bb66-02db1820bdd0&utm_source=api&utm_medium=partnership&utm_content=53f3fa2b-1718-4633-bb66-02db1820bdd0",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Terrier",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Female",
+      "size": "Medium",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "Dory",
+      "description": "Primary Color: White W/black Weight: 5lbs Age: 0yrs 0mths 10wks Animal has been Spayed",
+      "organization_animal_id": "127570",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-09T16:18:09+0000",
+      "published_at": "2023-12-09T16:18:08+0000",
+      "distance": null,
+      "contact": {
+        "email": "adopt@hhhstopeka.org",
+        "phone": "785-233-7325",
+        "address": {
+          "address1": "5720 SW 21st St.",
+          "address2": null,
+          "city": "Topeka",
+          "state": "KS",
+          "postcode": "66604",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/69972936"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/ks47"
+        }
+      }
+    },
+    {
+      "id": 69972937,
+      "organization_id": "KS47",
+      "url": "https://www.petfinder.com/dog/darla-69972937/ks/topeka/helping-hands-humane-society-ks47/?referrer_id=53f3fa2b-1718-4633-bb66-02db1820bdd0&utm_source=api&utm_medium=partnership&utm_content=53f3fa2b-1718-4633-bb66-02db1820bdd0",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Terrier",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Female",
+      "size": "Medium",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "Darla",
+      "description": "Primary Color: TAN W/WHITE Weight: 4lbs Age: 0yrs 0mths 10wks Animal has been Spayed",
+      "organization_animal_id": "127568",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-09T16:18:09+0000",
+      "published_at": "2023-12-09T16:18:08+0000",
+      "distance": null,
+      "contact": {
+        "email": "adopt@hhhstopeka.org",
+        "phone": "785-233-7325",
+        "address": {
+          "address1": "5720 SW 21st St.",
+          "address2": null,
+          "city": "Topeka",
+          "state": "KS",
+          "postcode": "66604",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/69972937"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/ks47"
+        }
+      }
+    },
+    {
+      "id": 69972938,
+      "organization_id": "KS47",
+      "url": "https://www.petfinder.com/dog/pumpkin-69972938/ks/topeka/helping-hands-humane-society-ks47/?referrer_id=53f3fa2b-1718-4633-bb66-02db1820bdd0&utm_source=api&utm_medium=partnership&utm_content=53f3fa2b-1718-4633-bb66-02db1820bdd0",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Pit Bull Terrier",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Female",
+      "size": "Medium",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "Pumpkin",
+      "description": "Primary Color: White W/black Weight: 10.7lbs Age: 0yrs 0mths 9wks Animal has been Spayed",
+      "organization_animal_id": "127093",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-09T16:18:09+0000",
+      "published_at": "2023-12-09T16:18:08+0000",
+      "distance": null,
+      "contact": {
+        "email": "adopt@hhhstopeka.org",
+        "phone": "785-233-7325",
+        "address": {
+          "address1": "5720 SW 21st St.",
+          "address2": null,
+          "city": "Topeka",
+          "state": "KS",
+          "postcode": "66604",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/69972938"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/ks47"
+        }
+      }
+    },
+    {
+      "id": 69972939,
+      "organization_id": "KS47",
+      "url": "https://www.petfinder.com/dog/homer-69972939/ks/topeka/helping-hands-humane-society-ks47/?referrer_id=53f3fa2b-1718-4633-bb66-02db1820bdd0&utm_source=api&utm_medium=partnership&utm_content=53f3fa2b-1718-4633-bb66-02db1820bdd0",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Pit Bull Terrier",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Adult",
+      "gender": "Male",
+      "size": "Medium",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "Homer",
+      "description": "Primary Color: Brindle W/white Weight: 67lbs Age: 5yrs 7mths 2wks Animal has been Neutered",
+      "organization_animal_id": "127658",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-09T16:18:09+0000",
+      "published_at": "2023-12-09T16:18:08+0000",
+      "distance": null,
+      "contact": {
+        "email": "adopt@hhhstopeka.org",
+        "phone": "785-233-7325",
+        "address": {
+          "address1": "5720 SW 21st St.",
+          "address2": null,
+          "city": "Topeka",
+          "state": "KS",
+          "postcode": "66604",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/69972939"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/ks47"
+        }
+      }
+    },
+    {
+      "id": 69972940,
+      "organization_id": "KS47",
+      "url": "https://www.petfinder.com/dog/stitch-69972940/ks/topeka/helping-hands-humane-society-ks47/?referrer_id=53f3fa2b-1718-4633-bb66-02db1820bdd0&utm_source=api&utm_medium=partnership&utm_content=53f3fa2b-1718-4633-bb66-02db1820bdd0",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Terrier",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Male",
+      "size": "Medium",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "Stitch",
+      "description": "Primary Color: White W/black Weight: 3.5lbs Age: 0yrs 0mths 10wks Animal has been Neutered",
+      "organization_animal_id": "127574",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-09T16:18:09+0000",
+      "published_at": "2023-12-09T16:18:08+0000",
+      "distance": null,
+      "contact": {
+        "email": "adopt@hhhstopeka.org",
+        "phone": "785-233-7325",
+        "address": {
+          "address1": "5720 SW 21st St.",
+          "address2": null,
+          "city": "Topeka",
+          "state": "KS",
+          "postcode": "66604",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/69972940"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/ks47"
+        }
+      }
+    },
+    {
+      "id": 69972941,
+      "organization_id": "KS47",
+      "url": "https://www.petfinder.com/dog/dot-69972941/ks/topeka/helping-hands-humane-society-ks47/?referrer_id=53f3fa2b-1718-4633-bb66-02db1820bdd0&utm_source=api&utm_medium=partnership&utm_content=53f3fa2b-1718-4633-bb66-02db1820bdd0",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Terrier",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Female",
+      "size": "Medium",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "Dot",
+      "description": "Primary Color: White W/black Weight: 3.6lbs Age: 0yrs 0mths 10wks Animal has been Spayed",
+      "organization_animal_id": "127569",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-09T16:18:09+0000",
+      "published_at": "2023-12-09T16:18:08+0000",
+      "distance": null,
+      "contact": {
+        "email": "adopt@hhhstopeka.org",
+        "phone": "785-233-7325",
+        "address": {
+          "address1": "5720 SW 21st St.",
+          "address2": null,
+          "city": "Topeka",
+          "state": "KS",
+          "postcode": "66604",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/69972941"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/ks47"
+        }
+      }
+    },
+    {
+      "id": 69972942,
+      "organization_id": "KS47",
+      "url": "https://www.petfinder.com/dog/eve-69972942/ks/topeka/helping-hands-humane-society-ks47/?referrer_id=53f3fa2b-1718-4633-bb66-02db1820bdd0&utm_source=api&utm_medium=partnership&utm_content=53f3fa2b-1718-4633-bb66-02db1820bdd0",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Terrier",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Female",
+      "size": "Medium",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "Eve",
+      "description": "Primary Color: White W/tan Weight: 3.5lbs Age: 0yrs 0mths 10wks Animal has been Spayed",
+      "organization_animal_id": "127571",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-09T16:18:09+0000",
+      "published_at": "2023-12-09T16:18:08+0000",
+      "distance": null,
+      "contact": {
+        "email": "adopt@hhhstopeka.org",
+        "phone": "785-233-7325",
+        "address": {
+          "address1": "5720 SW 21st St.",
+          "address2": null,
+          "city": "Topeka",
+          "state": "KS",
+          "postcode": "66604",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/69972942"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/ks47"
+        }
+      }
+    },
+    {
+      "id": 69972943,
+      "organization_id": "KS47",
+      "url": "https://www.petfinder.com/dog/wall-e-69972943/ks/topeka/helping-hands-humane-society-ks47/?referrer_id=53f3fa2b-1718-4633-bb66-02db1820bdd0&utm_source=api&utm_medium=partnership&utm_content=53f3fa2b-1718-4633-bb66-02db1820bdd0",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Terrier",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Male",
+      "size": "Medium",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "Wall E",
+      "description": "Primary Color: White W/ Brown Weight: 2lbs Age: 0yrs 0mths 10wks Animal has been Neutered",
+      "organization_animal_id": "127573",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-09T16:18:09+0000",
+      "published_at": "2023-12-09T16:18:08+0000",
+      "distance": null,
+      "contact": {
+        "email": "adopt@hhhstopeka.org",
+        "phone": "785-233-7325",
+        "address": {
+          "address1": "5720 SW 21st St.",
+          "address2": null,
+          "city": "Topeka",
+          "state": "KS",
+          "postcode": "66604",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/69972943"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/ks47"
+        }
+      }
+    },
+    {
+      "id": 69972944,
+      "organization_id": "KS47",
+      "url": "https://www.petfinder.com/dog/munchkin-69972944/ks/topeka/helping-hands-humane-society-ks47/?referrer_id=53f3fa2b-1718-4633-bb66-02db1820bdd0&utm_source=api&utm_medium=partnership&utm_content=53f3fa2b-1718-4633-bb66-02db1820bdd0",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Pit Bull Terrier",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Female",
+      "size": "Medium",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "Munchkin",
+      "description": "Primary Color: Black W/white Weight: 7.6lbs Age: 0yrs 0mths 9wks Animal has been Spayed",
+      "organization_animal_id": "127094",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-09T16:18:09+0000",
+      "published_at": "2023-12-09T16:18:08+0000",
+      "distance": null,
+      "contact": {
+        "email": "adopt@hhhstopeka.org",
+        "phone": "785-233-7325",
+        "address": {
+          "address1": "5720 SW 21st St.",
+          "address2": null,
+          "city": "Topeka",
+          "state": "KS",
+          "postcode": "66604",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/69972944"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/ks47"
+        }
+      }
+    },
+    {
+      "id": 69972945,
+      "organization_id": "KS47",
+      "url": "https://www.petfinder.com/dog/eema-69972945/ks/topeka/helping-hands-humane-society-ks47/?referrer_id=53f3fa2b-1718-4633-bb66-02db1820bdd0&utm_source=api&utm_medium=partnership&utm_content=53f3fa2b-1718-4633-bb66-02db1820bdd0",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Terrier",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Female",
+      "size": "Medium",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "Eema",
+      "description": "Primary Color: White W/black Weight: 5lbs Age: 0yrs 0mths 10wks Animal has been Spayed",
+      "organization_animal_id": "127572",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-09T16:18:09+0000",
+      "published_at": "2023-12-09T16:18:08+0000",
+      "distance": null,
+      "contact": {
+        "email": "adopt@hhhstopeka.org",
+        "phone": "785-233-7325",
+        "address": {
+          "address1": "5720 SW 21st St.",
+          "address2": null,
+          "city": "Topeka",
+          "state": "KS",
+          "postcode": "66604",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/69972945"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/ks47"
+        }
+      }
+    },
+    {
+      "id": 69972926,
+      "organization_id": "OH1232",
+      "url": "https://www.petfinder.com/dog/latte-69972926/oh/toledo/toledo-animal-rescue-oh1232/?referrer_id=53f3fa2b-1718-4633-bb66-02db1820bdd0&utm_source=api&utm_medium=partnership&utm_content=53f3fa2b-1718-4633-bb66-02db1820bdd0",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Shepherd",
+        "secondary": "Husky",
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Yellow / Tan / Blond / Fawn",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Young",
+      "gender": "Female",
+      "size": "Medium",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "Latte",
+      "description": null,
+      "organization_animal_id": "TAR-A-1560",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-09T16:17:56+0000",
+      "published_at": "2023-12-09T16:17:55+0000",
+      "distance": null,
+      "contact": {
+        "email": "info@toledoanimalrescue.org",
+        "phone": "(419) 382-1130",
+        "address": {
+          "address1": null,
+          "address2": null,
+          "city": "Toledo",
+          "state": "OH",
+          "postcode": "43609",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/69972926"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/oh1232"
+        }
+      }
+    },
+    {
+      "id": 69972917,
+      "organization_id": "NJ65",
+      "url": "https://www.petfinder.com/dog/pebbles-69972917/nj/lindenwold/animal-adoption-center-nj65/?referrer_id=53f3fa2b-1718-4633-bb66-02db1820bdd0&utm_source=api&utm_medium=partnership&utm_content=53f3fa2b-1718-4633-bb66-02db1820bdd0",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Pit Bull Terrier",
+        "secondary": null,
+        "mixed": false,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Black",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Senior",
+      "gender": "Female",
+      "size": "Small",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "Pebbles",
+      "description": "Notes from Shelter Friends --\n\nPer Volunteer 12/5:\nPebbles is such a sweet, gentle girl - I could hardly believe...",
+      "organization_animal_id": "ANI-A-2478",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-09T16:17:35+0000",
+      "published_at": "2023-12-09T16:17:34+0000",
+      "distance": null,
+      "contact": {
+        "email": "info@animaladoption.com",
+        "phone": "(856) 435-9116",
+        "address": {
+          "address1": "501 Berlin Road North",
+          "address2": null,
+          "city": "Lindenwold",
+          "state": "NJ",
+          "postcode": "08021",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/69972917"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/nj65"
+        }
+      }
+    },
+    {
+      "id": 69972915,
+      "organization_id": "NY1041",
+      "url": "https://www.petfinder.com/dog/lily-69972915/ct/ridgefield/rebound-hounds-ny1041/?referrer_id=53f3fa2b-1718-4633-bb66-02db1820bdd0&utm_source=api&utm_medium=partnership&utm_content=53f3fa2b-1718-4633-bb66-02db1820bdd0",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Terrier",
+        "secondary": null,
+        "mixed": false,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Bicolor",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Adult",
+      "gender": "Female",
+      "size": "Medium",
+      "coat": "Short",
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": true,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": null,
+        "dogs": true,
+        "cats": null
+      },
+      "tags": [
+        "Friendly",
+        "Affectionate",
+        "Loyal",
+        "Gentle",
+        "Playful",
+        "Smart",
+        "Quiet",
+        "Funny",
+        "Independent",
+        "Curious",
+        "Brave",
+        "Couch potato",
+        "Loves Kisses"
+      ],
+      "name": "LILY",
+      "description": "COURTESY POST.\n\nMEET LILY! This beauty was abandoned on the Upper West Side of NYC. She had just given birth...",
+      "organization_animal_id": null,
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972915/1/?bust=1702138624&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972915/1/?bust=1702138624&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972915/1/?bust=1702138624&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972915/1/?bust=1702138624"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972915/2/?bust=1702138625&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972915/2/?bust=1702138625&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972915/2/?bust=1702138625&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972915/2/?bust=1702138625"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972915/3/?bust=1702138626&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972915/3/?bust=1702138626&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972915/3/?bust=1702138626&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972915/3/?bust=1702138626"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972915/4/?bust=1702138626&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972915/4/?bust=1702138626&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972915/4/?bust=1702138626&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972915/4/?bust=1702138626"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972915/5/?bust=1702138627&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972915/5/?bust=1702138627&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972915/5/?bust=1702138627&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972915/5/?bust=1702138627"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972915/6/?bust=1702138627&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972915/6/?bust=1702138627&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972915/6/?bust=1702138627&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972915/6/?bust=1702138627"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972915/1/?bust=1702138624&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972915/1/?bust=1702138624&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972915/1/?bust=1702138624&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972915/1/?bust=1702138624"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-09T16:17:10+0000",
+      "published_at": "2023-12-09T16:17:09+0000",
+      "distance": null,
+      "contact": {
+        "email": "reboundhounds@gmail.com",
+        "phone": null,
+        "address": {
+          "address1": "100 Main Street",
+          "address2": null,
+          "city": "Ridgefield",
+          "state": "CT",
+          "postcode": "06877",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/69972915"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/ny1041"
+        }
+      }
+    },
+    {
+      "id": 69972910,
+      "organization_id": "VA558",
+      "url": "https://www.petfinder.com/dog/batman-turn-key-adult-boy-well-behaved-sweeteheart-69972910/ct/danbury/blue-ridge-dog-rescue-va558/?referrer_id=53f3fa2b-1718-4633-bb66-02db1820bdd0&utm_source=api&utm_medium=partnership&utm_content=53f3fa2b-1718-4633-bb66-02db1820bdd0",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "American Bulldog",
+        "secondary": null,
+        "mixed": false,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "White / Cream",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Adult",
+      "gender": "Male",
+      "size": "Large",
+      "coat": "Short",
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": true,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": true,
+        "dogs": true,
+        "cats": true
+      },
+      "tags": [
+        "Friendly",
+        "Affectionate",
+        "Loyal",
+        "Gentle",
+        "Smart",
+        "Funny",
+        "Couch Potato"
+      ],
+      "name": "Batman Turn Key Adult Boy Well-Behaved Sweeteheart",
+      "description": "Big Ole Head Batman great with kids cats and dogs ask for his video.  Lives in a home and knows...",
+      "organization_animal_id": null,
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972910/1/?bust=1702138450&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972910/1/?bust=1702138450&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972910/1/?bust=1702138450&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972910/1/?bust=1702138450"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972910/2/?bust=1702138450&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972910/2/?bust=1702138450&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972910/2/?bust=1702138450&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972910/2/?bust=1702138450"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972910/3/?bust=1702138450&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972910/3/?bust=1702138450&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972910/3/?bust=1702138450&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972910/3/?bust=1702138450"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972910/4/?bust=1702138451&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972910/4/?bust=1702138451&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972910/4/?bust=1702138451&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972910/4/?bust=1702138451"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972910/5/?bust=1702138451&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972910/5/?bust=1702138451&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972910/5/?bust=1702138451&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972910/5/?bust=1702138451"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972910/1/?bust=1702138450&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972910/1/?bust=1702138450&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972910/1/?bust=1702138450&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972910/1/?bust=1702138450"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-09T16:14:16+0000",
+      "published_at": "2023-12-09T16:14:13+0000",
+      "distance": null,
+      "contact": {
+        "email": "lorpdogrescue@gmail.com",
+        "phone": null,
+        "address": {
+          "address1": null,
+          "address2": null,
+          "city": "Danbury",
+          "state": "CT",
+          "postcode": "06810",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/69972910"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/va558"
+        }
+      }
+    },
+    {
+      "id": 69972906,
+      "organization_id": "NJ290",
+      "url": "https://www.petfinder.com/dog/orion-69972906/nj/lambertville/animal-alliance-nj290/?referrer_id=53f3fa2b-1718-4633-bb66-02db1820bdd0&utm_source=api&utm_medium=partnership&utm_content=53f3fa2b-1718-4633-bb66-02db1820bdd0",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Lhasa Apso",
+        "secondary": "Poodle",
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "White / Cream",
+        "secondary": "Black",
+        "tertiary": null
+      },
+      "age": "Adult",
+      "gender": "Male",
+      "size": "Small",
+      "coat": "Long",
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": null,
+        "dogs": true,
+        "cats": null
+      },
+      "tags": [],
+      "name": "Orion",
+      "description": "ORION is a 6-7 year old Lhasa/Poodle mix looking for his &quot;forever&quot; home.  Orion gets along with other dogs and...",
+      "organization_animal_id": null,
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972906/1/?bust=1702138334&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972906/1/?bust=1702138334&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972906/1/?bust=1702138334&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972906/1/?bust=1702138334"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972906/2/?bust=1702138334&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972906/2/?bust=1702138334&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972906/2/?bust=1702138334&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972906/2/?bust=1702138334"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972906/3/?bust=1702138335&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972906/3/?bust=1702138335&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972906/3/?bust=1702138335&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972906/3/?bust=1702138335"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972906/4/?bust=1702138335&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972906/4/?bust=1702138335&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972906/4/?bust=1702138335&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972906/4/?bust=1702138335"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972906/1/?bust=1702138334&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972906/1/?bust=1702138334&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972906/1/?bust=1702138334&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/69972906/1/?bust=1702138334"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-09T16:12:17+0000",
+      "published_at": "2023-12-09T16:12:16+0000",
+      "distance": null,
+      "contact": {
+        "email": "animalalliance@comcast.net",
+        "phone": "(609) 818-1952",
+        "address": {
+          "address1": "1432 Route 179",
+          "address2": null,
+          "city": "Lambertville",
+          "state": "NJ",
+          "postcode": "08530",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/69972906"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/nj290"
+        }
+      }
+    },
+    {
+      "id": 69972880,
+      "organization_id": "NM13",
+      "url": "https://www.petfinder.com/dog/tank-69972880/nm/albuquerque/albuquerque-animal-welfare-eastside-nm13/?referrer_id=53f3fa2b-1718-4633-bb66-02db1820bdd0&utm_source=api&utm_medium=partnership&utm_content=53f3fa2b-1718-4633-bb66-02db1820bdd0",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Pit Bull Terrier",
+        "secondary": "Mixed Breed",
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Young",
+      "gender": "Male",
+      "size": "Large",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": false,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": false
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "TANK",
+      "description": null,
+      "organization_animal_id": "A1886967",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-09T16:10:35+0000",
+      "published_at": "2023-12-09T16:10:34+0000",
+      "distance": null,
+      "contact": {
+        "email": null,
+        "phone": "505-768-1975 ",
+        "address": {
+          "address1": "8920 Lomas Blvd.  NE",
+          "address2": null,
+          "city": "Albuquerque",
+          "state": "NM",
+          "postcode": "87112",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/69972880"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/nm13"
+        }
+      }
+    },
+    {
+      "id": 69972881,
+      "organization_id": "NM13",
+      "url": "https://www.petfinder.com/dog/paper-69972881/nm/albuquerque/albuquerque-animal-welfare-eastside-nm13/?referrer_id=53f3fa2b-1718-4633-bb66-02db1820bdd0&utm_source=api&utm_medium=partnership&utm_content=53f3fa2b-1718-4633-bb66-02db1820bdd0",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Labrador Retriever",
+        "secondary": "Australian Cattle Dog / Blue Heeler",
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Male",
+      "size": "Small",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": false,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": false
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "PAPER",
+      "description": null,
+      "organization_animal_id": "A1887180",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2023-12-09T16:10:35+0000",
+      "published_at": "2023-12-09T16:10:34+0000",
+      "distance": null,
+      "contact": {
+        "email": null,
+        "phone": "505-768-1975 ",
+        "address": {
+          "address1": "8920 Lomas Blvd.  NE",
+          "address2": null,
+          "city": "Albuquerque",
+          "state": "NM",
+          "postcode": "87112",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/69972881"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/nm13"
+        }
+      }
+    }
+  ],
+  "pagination": {
+    "count_per_page": 20,
+    "total_count": 161891,
+    "current_page": 1,
+    "total_pages": 8095,
+    "_links": {
+      "next": {
+        "href": "/v2/animals?type=dog&page=2"
+      }
+    }
+  }
+}
