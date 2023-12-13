@@ -5,7 +5,6 @@ function Header() {
 
             <div>
                <a href="/" className='site-title'>Waggin' Tails</a>
-
             </div>
 
     )
