@@ -7,7 +7,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class userInformation {
+public class UserInformation {
 
 
     @Id
@@ -16,6 +16,9 @@ public class userInformation {
     private String userName;
     private String password;
 
+
+    public UserInformation() {
+    }
 
     public int getId() {
         return id;
