@@ -6,10 +6,13 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+
+//user model class to define variable needs for user class, login
 @Entity
-public class UserInformation {
+public class User {
 
 
+    // ID annonation, generated value annotation to generated and increase id per user entry
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
@@ -17,7 +20,15 @@ public class UserInformation {
     private String password;
 
 
-    public UserInformation() {
+    // empty user tostring
+    public User() {
+    }
+
+    // may need to refactor code for to string
+    public User(String userName, String password) {
+                this.userName = userName;
+                this.password = password;
+
     }
 
     public int getId() {

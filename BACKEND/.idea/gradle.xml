@@ -4,11 +4,10 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/BACKEND/WagginTails_Backend" />
-        <option name="gradleJvm" value="openjdk-20" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/WagginTails_Backend" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/BACKEND/WagginTails_Backend" />
+            <option value="$PROJECT_DIR$/WagginTails_Backend" />
           </set>
         </option>
       </GradleProjectSettings>
