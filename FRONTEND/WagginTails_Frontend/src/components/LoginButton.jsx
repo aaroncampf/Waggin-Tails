@@ -6,4 +6,4 @@ function LoginButton({ onClick }) {
   );
 }
 
-export default LoginButton
+export default LoginButton;
