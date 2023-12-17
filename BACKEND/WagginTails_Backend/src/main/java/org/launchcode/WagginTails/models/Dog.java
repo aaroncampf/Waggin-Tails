@@ -15,6 +15,7 @@ public class Dog {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
     // private string name
     private String name;
     private String natureDesc;
@@ -22,18 +23,20 @@ public class Dog {
     private String breed;
     private Long age;
 
-
+    private String photoUrl;
     public Dog() {
 
     }
 
-    public Dog(int id, String name, String natureDesc, String color, String breed, Long age) {
+    public Dog(int id, String name, String natureDesc, String color, String breed, Long age, String photoUrl) {
         this.id = id;
         this.name = name;
         this.natureDesc = natureDesc;
         this.color = color;
         this.breed = breed;
         this.age = age;
+        this.photoUrl = photoUrl;
+
     }
 
     public int getId() {
@@ -43,6 +46,9 @@ public class Dog {
     public void setId(int id) {
         this.id = id;
     }
+
+
+
 
     public String getName() {
         return name;
@@ -84,4 +90,14 @@ public class Dog {
     public void setAge(Long age) {
         this.age = age;
     }
+
+    public String getPhotoUrl() {
+        return photoUrl;
+    }
+
+    public void setPhotoUrl(String photoUrl) {
+        this.photoUrl = photoUrl;
+    }
+
+
 }
