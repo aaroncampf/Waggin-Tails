@@ -1,6 +1,5 @@
 
 import './App.css'
-import Hello from './components/Hello'
 import FeaturedPets from './components/FeaturedPets'
 import Header from './components/Header'
 import HeroSection from './components/HeroSection';
