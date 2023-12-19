@@ -36,7 +36,7 @@ export default function GoogleMapsPage() {
         {/* {Google map box} */}
         <GoogleMap
           center={center}
-          zoom={20}
+          zoom={15}
           mapContainerStyle={{ width: "100%", height: "100%" }}
           options={{
             zoomControl: true,
@@ -48,8 +48,10 @@ export default function GoogleMapsPage() {
         >
             
             <MarkerF position={center}
-            icon={{ url: "https://www.kindpng.com/picc/m/23-235395_map-marker-png-google-maps-pin-svg-transparent.png" ,scaledSize:new google.maps.Size(150, 150)}}
-            />
+            // icon={{ url: "https://www.kindpng.com/picc/m/23-235395_map-marker-png-google-maps-pin-svg-transparent.png" ,scaledSize:new google.maps.Size(60, 60)}}
+            icon={{ url: "https://th.bing.com/th/id/OIP.e1RJtmcklkyj8qybIDJUGQHaF_?rs=1&pid=ImgDetMain" ,scaledSize:new google.maps.Size(60, 60)}}
+            opacity={0.6}
+           />
           {/* {Display markers or directions} */}
         </GoogleMap>
       </Box>
