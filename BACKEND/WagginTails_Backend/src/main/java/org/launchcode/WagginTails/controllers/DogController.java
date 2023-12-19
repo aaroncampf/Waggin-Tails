@@ -23,8 +23,13 @@ public class DogController {
    private DogService dogService;
 
 
-
-
+@GetMapping("/list")
+public String listAllDogs(Model model){
+    List<Dog> dogs = dogService.getAllDogs();
+    model.addAttribute("dogs", dogs);
+    return "dogs/list";
+}
+//Get Mapping request for localhost:8080/dog/add to obtain information for dog model
     @GetMapping("/add")
     public String addNewDog(Model model) {
         Dog dog = new Dog();
@@ -38,23 +43,20 @@ public class DogController {
     - using dogservice.saveDog) method in dog service that saves instance of dof class
     */
 
-    // post mappig code for postman end pointtesting
-    /*@PostMapping("/add")
-    public String saveNewDog(@RequestBody Dog dog){
-        dogService.saveDog(dog);
-        return "New Dog has Been added";
-    }*/
 @PostMapping("/add")
 public String saveNewDog(@ModelAttribute("dog") Dog dog){
     dogService.saveDog(dog);
-    return "redirect:/dog/add";
+    return "redirect:/dog/list";
 }
 
     // Get Mappig Request to see list of dog in url localhost:8080//dog/alldogs
     //named method getAllDogs, used List to list Dog model from database, return dogsService.getAllDogs
-    @GetMapping("/list")
+    /*@GetMapping("/list")
     public List<Dog> getAllDogs() {
         return dogService.getAllDogs();
-    }
+    }*/
+
+
+
 
     }
