@@ -16,4 +16,11 @@ public interface DogService {
 
     // method that list all dogs saved in database. Call List on Dog model,method name; getAll Dogs! *Had to put     List<Dog> findAll(); in DogRepository for method to work
     public List<Dog>getAllDogs();
+
+
+
+    // method from crd repo that removes if
+   void removeDog(Integer id);
+
+    public Dog findDogId(Integer id) throws dogNotFoundException;
 }

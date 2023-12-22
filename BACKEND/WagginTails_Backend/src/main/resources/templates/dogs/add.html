@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Add Dogs</title>
+    <title>[[${pageTitle}]]</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,11 +17,12 @@
 
     <div th:replace="fragments :: page-header"></div>
 
-    <h1>Add Dogs</h1>
+    <h1>[[${pageTitle}]]</h1>
 </head>
 <body>
 
 <form role ="form" method="post" th:action="@{/dog/add}" th:object="${dog}">
+    <input type="hidden" th:field="*{id}">
     <div class="form-group">
         <label for="name">Dog Name</label>
         <input
@@ -32,6 +33,18 @@
                 th:field="${name}"
                 aria-describedby="emailHelp"
                 placeholder="Enter Dog Name">
+
+    </div>
+    <div class="form-group">
+        <label for="natureDesc">Dog Age</label>
+        <input
+                type="text"
+                class="form-control"
+                id="age"
+                name="age"
+                th:field="*{age}"
+                placeholder="Enter Dog Age">
+    </div>
     </div>
     <div class="form-group">
         <label for="natureDesc">Nature Description</label>
@@ -68,7 +81,7 @@
 
 
     <div class="form-group">
-        <label for="photoUrl">Dog Photo</label>
+        <label for="photoUrl">Dog Photo Profile</label>
         <input
                 type="text"
                 class="form-control"
@@ -79,6 +92,8 @@
     </div>
 
     <button type="submit" class="btn btn-primary">Add Dog</button>
+    <input class="btn btn-primary" type="reset" value="Reset"/>
+
 </form>
 </body>
 </html>

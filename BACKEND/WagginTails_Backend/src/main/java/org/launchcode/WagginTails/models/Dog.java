@@ -6,6 +6,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+
 @Entity
 public class Dog {
 
@@ -24,6 +25,8 @@ public class Dog {
     private Long age;
 
     private String photoUrl;
+
+    //private String photoOneUrl;
     public Dog() {
 
     }
@@ -39,12 +42,15 @@ public class Dog {
 
     }
 
+
+
     public int getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public Dog setId(int id) {
         this.id = id;
+        return null;
     }
 
 
@@ -75,6 +81,10 @@ public class Dog {
         this.color = color;
     }
 
+    public void setColor() {
+        this.color = color;
+    }
+
     public String getBreed() {
         return breed;
     }
@@ -98,6 +108,7 @@ public class Dog {
     public void setPhotoUrl(String photoUrl) {
         this.photoUrl = photoUrl;
     }
+
 
 
 }

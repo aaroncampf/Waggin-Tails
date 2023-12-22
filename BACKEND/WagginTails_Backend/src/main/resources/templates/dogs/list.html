@@ -31,6 +31,8 @@
             <th>DOG BREED</th>
             <th>DOG COLOR</th>
             <th>DOG NATURE DESCRIPTION</th>
+            <th>DOG PROFILE URL</th>
+
         </tr>
         </thead>
         <tbody>
@@ -41,13 +43,18 @@
             <td th:text="${dog.breed}">DOG BREED</td>
             <td th:text="${dog.color}">DOG COLOR</td>
             <td th:text="${dog.natureDesc}">DOG NATURE</td>
+            <td th:text="${dog.photoUrl}">DOG PROFILE URL</td>
+
+
+            <td><a th:href="@{'/dog/update/' + ${dog.id}}">Edit Dog</a></td>
+            <td><a th:href="@{'/dog/remove/' + ${dog.id}}">Delete</a></td>
 
         </tr>
 
         </tbody>
     </table>
 </div>
-<a th:href="@{add}">Add Dog</a>
+<a th:href="@{add}"class="btn btn-primary" href="#" role="button">Add Dog</a>
 
 </body>
 </html>
