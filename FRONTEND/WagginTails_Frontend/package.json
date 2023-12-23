@@ -10,9 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "mdb-react-ui-kit": "^7.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.49.2",
+    "react-router-dom": "^6.21.1",
     "swiper": "^11.0.5"
   },
   "devDependencies": {

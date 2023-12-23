@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import { useAuth } from '../components/AuthContext';
-import LoginForm from '../components/LoginForm';
-import SignUpForm from '../components/SignUpForm';
+import { useAuth } from './AuthContext';
+import LoginForm from './LoginForm';
+import SignUpForm from './SignUpForm';
 import Home from './LoggedinMessage';
 
-const Header = () => {
+const Login = () => {
   const { loggedIn, logout } = useAuth();
   const [showAuthForms, setShowAuthForms] = useState(false);
+
 
   const toggleAuthForms = () => {
     setShowAuthForms(!showAuthForms);
@@ -38,4 +39,4 @@ const Header = () => {
   );
 }
 
-export default Header;
+export default Login;
