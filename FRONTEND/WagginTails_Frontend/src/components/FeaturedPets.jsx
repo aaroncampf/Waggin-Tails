@@ -34,11 +34,14 @@ export default function FeaturedPets() {
           modifier: 1,
           slideShadows: true,
         }}
-        pagination={true}
+        pagination={false}
         modules={[EffectCoverflow, Pagination]}
         className="mySwiper"
       >
 
+
+        
+     
 {samplePets.animals.map((animal) => {   
 			return (<SwiperSlide key={animal.index}>
           <img src={animal.primary_photo_cropped["full"]}  />
@@ -52,7 +55,6 @@ export default function FeaturedPets() {
 
 : <h2>No Adoptable Dogs Found! Sorry!</h2>
 }
-
         </>
 
     );
