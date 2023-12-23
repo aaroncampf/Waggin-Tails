@@ -1,12 +1,15 @@
 package org.launchcode.WagginTails.controllers;
 
 
+import jakarta.validation.Valid;
 import org.launchcode.WagginTails.models.Dog;
 import org.launchcode.WagginTails.service.DogService;
 import org.launchcode.WagginTails.service.dogNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -41,7 +44,12 @@ public class DogController {
 
 
     @PostMapping("/add")
-    public String saveNewDog(@ModelAttribute("dog") Dog dog) {
+    public String saveNewDog(@Valid @ModelAttribute("dog") Dog dog, BindingResult result, Model model) {
+    if(result.hasErrors()){
+        //model.addAttribute("dog", dog);
+        return "dogs/add";
+    }
+
         dogService.saveDog(dog);
         return "redirect:/dog/list";
     }

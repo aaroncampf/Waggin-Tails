@@ -20,10 +20,12 @@
 </head>
 <body>
 <div class="container">
+
     <h2>Dog list</h2>
+
     <table class="table table-bordered table-dark">
 
-        <thead>
+        <thead class="thead-light">
         <tr>
             <th>DOG ID</th>
             <th>DOG NAME</th>
@@ -32,6 +34,10 @@
             <th>DOG COLOR</th>
             <th>DOG NATURE DESCRIPTION</th>
             <th>DOG PROFILE URL</th>
+            <th>DOG PHOTO ONE URL</th>
+            <th>DOG PHOTO TWO URL</th>
+
+
 
         </tr>
         </thead>
@@ -43,7 +49,9 @@
             <td th:text="${dog.breed}">DOG BREED</td>
             <td th:text="${dog.color}">DOG COLOR</td>
             <td th:text="${dog.natureDesc}">DOG NATURE</td>
-            <td th:text="${dog.photoUrl}">DOG PROFILE URL</td>
+            <td th:text="${dog.dogProfilePhotoUrl}">DOG PROFILE URL</td>
+            <td th:text="${dog.photoOneUrl}">DOG PHOTO ONE</td>
+            <td th:text="${dog.photoTwoUrl}">DOG PHOTO TWO</td>
 
 
             <td><a th:href="@{'/dog/update/' + ${dog.id}}">Edit Dog</a></td>

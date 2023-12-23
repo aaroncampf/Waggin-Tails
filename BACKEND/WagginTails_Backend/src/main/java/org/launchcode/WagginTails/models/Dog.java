@@ -5,6 +5,9 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 
 
 @Entity
@@ -18,29 +21,49 @@ public class Dog {
     private int id;
 
     // private string name
+    @NotEmpty(message ="Please enter Name")
     private String name;
+
+    @NotEmpty(message= "Nature Description should not be blank")
     private String natureDesc;
+
+    @NotEmpty(message= "Color should not be blank")
     private String color;
+    @NotEmpty(message = "Breed should not be blank")
     private String breed;
-    private Long age;
 
-    private String photoUrl;
 
-    //private String photoOneUrl;
-    public Dog() {
+    @NotNull(message = "Age should not be blank")
+    private int age;
 
-    }
+    @NotEmpty(message = "Please enter dog profile photo URL")
+    private String dogProfilePhotoUrl;
 
-    public Dog(int id, String name, String natureDesc, String color, String breed, Long age, String photoUrl) {
+
+    @NotEmpty(message = "Please enter dog photo-1")
+    private String photoOneUrl;
+
+    @NotEmpty(message = "Please enter photo-2")
+    private String photoTwoUrl;
+
+
+    public Dog(int id, String name, String natureDesc, String color, String breed, int age, String dogProfilePhotoUrl, String photoOneUrl, String photoTwoUrl) {
         this.id = id;
         this.name = name;
         this.natureDesc = natureDesc;
         this.color = color;
         this.breed = breed;
         this.age = age;
-        this.photoUrl = photoUrl;
+        this.dogProfilePhotoUrl = dogProfilePhotoUrl;
+        this.photoOneUrl = photoOneUrl;
+        this.photoTwoUrl = photoTwoUrl;
+    }
+
+    public Dog() {
 
     }
+
+
 
 
 
@@ -93,22 +116,35 @@ public class Dog {
         this.breed = breed;
     }
 
-    public Long getAge() {
+    public int getAge() {
         return age;
     }
 
-    public void setAge(Long age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
-    public String getPhotoUrl() {
-        return photoUrl;
+    public String getDogProfilePhotoUrl() {
+        return dogProfilePhotoUrl;
     }
 
-    public void setPhotoUrl(String photoUrl) {
-        this.photoUrl = photoUrl;
+    public void setDogProfilePhotoUrl(String dogProfilePhotoUrl) {
+        this.dogProfilePhotoUrl = dogProfilePhotoUrl;
     }
 
+    public String getPhotoOneUrl() {
+        return photoOneUrl;
+    }
 
+    public void setPhotoOneUrl(String photoOneUrl) {
+        this.photoOneUrl = photoOneUrl;
+    }
 
+    public String getPhotoTwoUrl() {
+        return photoTwoUrl;
+    }
+
+    public void setPhotoTwoUrl(String photoTwoUrl) {
+        this.photoTwoUrl = photoTwoUrl;
+    }
 }
