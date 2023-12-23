@@ -14,6 +14,10 @@ import HeroSection from './components/HeroSection';
 import Button from './components/Button'
 import Footer from './components/Footer'
 import FeaturedPets from './components/FeaturedPets';
+import { Navbar } from './components/Navbar';
+import {Routes,Route}  from "react-router-dom";
+import About from './components/About';
+
 const App = () => {
   const { loggedIn, logout } = useAuth();
 
@@ -21,8 +25,14 @@ const App = () => {
     <>
     <div className="App"> 
       <Navbar />
+      <Routes>
+        <Route path="/about" element={<About />}/>
+        <Route path="/allDogs" element={<></>}/>
+        <Route path="/login" element={<LoginForm />}/>
+      </Routes>
     </div>
     <div>
+   
       {/* <Login/>
       <HeroSection/>
       <Button/>
@@ -33,6 +43,8 @@ const App = () => {
       </div>
       
       
+
+   
     
     </>
 
