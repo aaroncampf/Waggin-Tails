@@ -5,6 +5,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.Email;
 
 
 //user model class to define variable needs for user class, login
@@ -16,6 +17,9 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
+
+    private String email;
     private String userName;
     private String password;
 
@@ -25,7 +29,9 @@ public class User {
     }
 
     // may need to refactor code for to string
-    public User(String userName, String password) {
+    public User(String email,String userName, String password) {
+                this.id = id;
+                this.email = email;
                 this.userName = userName;
                 this.password = password;
 
@@ -37,6 +43,14 @@ public class User {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getPassword() {

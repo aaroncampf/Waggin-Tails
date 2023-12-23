@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>[[${pageTitle}]]</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <div th:replace="fragments :: page-header"></div>
+
+    <h1>[[${pageTitle}]]</h1>
+</head>
+<body>
+<p th:text="${errorMsg}" style="color:red;"></p>
+
+<form role ="form" method="post" th:action="@{/dog/add}" th:object="${dog}">
+    <input type="hidden" th:field="*{id}">
+    <div class="form-group">
+        <label for="name">Dog Name</label>
+        <input
+                type="title"
+                class="form-control"
+                id="name"
+                name="name"
+                th:field="${name}"
+                aria-describedby="emailHelp"
+                placeholder="Enter Dog Name">
+        <p th:if="${#fields.hasErrors('name')}" class="text-danger" th:errors="*{name}"></p>
+
+
+    </div>
+    <div class="form-group">
+        <label for="natureDesc">Dog Age</label>
+        <input
+                type="text"
+                class="form-control"
+                id="age"
+                name="age"
+                th:field="*{age}"
+                placeholder="Enter Dog Age">
+        <p th:if="${#fields.hasErrors('age')}" class="text-danger" th:errors="*{age}"></p>
+    </div>
+    </div>
+    <div class="form-group">
+        <label for="natureDesc">Nature Description</label>
+        <input
+                type="text"
+                class="form-control"
+                id="natureDesc"
+                name="natureDesc"
+                th:field="*{natureDesc}"
+                placeholder="Enter Nature Description">
+        <p th:if="${#fields.hasErrors('natureDesc')}" class="text-danger" th:errors="*{natureDesc}"></p>
+
+    </div>
+
+    <div class="form-group">
+        <label for="color">Dog Color</label>
+        <input
+                type="text"
+                class="form-control"
+                id="color"
+                name="color"
+                th:field="*{color}"
+                placeholder="Enter Dog Color">
+        <p th:if="${#fields.hasErrors('color')}" class="text-danger" th:errors="*{color}"></p>
+
+    </div>
+
+    <div class="form-group">
+        <label for="breed">Dog Breed</label>
+        <input
+                type="text"
+                class="form-control"
+                id="breed"
+                name="breed"
+                th:field="*{breed}"
+                placeholder="Enter Dog Breed">
+        <p th:if="${#fields.hasErrors('breed')}" class="text-danger" th:errors="*{breed}"></p>
+
+    </div>
+
+
+    <div class="form-group">
+        <label for="dogProfilePhotoUrl">Dog Profile Photo Profile</label>
+        <input
+                type="text"
+                class="form-control"
+                id="dogProfilePhotoUrl"
+                name="dogProfilePhotoUrl"
+                th:field="*{dogProfilePhotoUrl}"
+                placeholder="Enter Dog Profile Url Photo Link">
+        <p th:if="${#fields.hasErrors('dogProfilePhotoUrl')}" class="text-danger" th:errors="*{dogProfilePhotoUrl}"></p>
+
+    </div>
+
+    <div class="form-group">
+        <label for="photoOneUrl">Dog Photo One</label>
+        <input
+                type="text"
+                class="form-control"
+                id="photoOneUrl"
+                name="photoOneUrl"
+                th:field="*{photoOneUrl}"
+                placeholder="Enter Dog Photo One Url  Link">
+        <p th:if="${#fields.hasErrors('photoOneUrl')}" class="text-danger" th:errors="*{photoOneUrl}"></p>
+
+    </div>
+
+    <div class="form-group">
+        <label for="photoTwoUrl">Dog Photo Two</label>
+        <input
+                type="text"
+                class="form-control"
+                id="photoTwoUrl"
+                name="photoTwoUrl"
+                th:field="*{photoTwoUrl}"
+                placeholder="Enter Dog Photo Two Url  Link">
+        <p th:if="${#fields.hasErrors('photoTwoUrl')}" class="text-danger" th:errors="*{photoTwoUrl}"></p>
+
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add Dog</button>
+    <input class="btn btn-primary" type="reset" value="Reset"/>
+
+</form>
+</body>
+</html>

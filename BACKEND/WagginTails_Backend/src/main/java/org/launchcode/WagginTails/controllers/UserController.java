@@ -17,7 +17,7 @@ import java.util.List;
 public class UserController {
 
 
-    // created instance of userepository to access methods to save dara
+    // created instance of userepository to access methods to save data
     @Autowired
     private UserRepository userRepository;
 
