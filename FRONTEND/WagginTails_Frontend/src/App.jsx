@@ -15,16 +15,6 @@ import HeroSection from './components/HeroSection';
 import Button from './components/Button'
 import Footer from './components/Footer'
 
-import GoogleMapPage from './components/GoogleMapsPage'
-
-function App() {
-
-  return (
-    <>
-      <div>
-        <GoogleMapPage />
-      
-
 const App = () => {
   const { loggedIn, logout } = useAuth();
 
