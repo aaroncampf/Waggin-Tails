@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useAuth } from './AuthContext';
+import LoggedinMessage from "./LoggedinMessage";
+
 
 const SignUpForm = () => {
   const [username, setUsername] = useState('');
@@ -7,12 +9,12 @@ const SignUpForm = () => {
   const { login, loggedIn } = useAuth();
 
   if (loggedIn) {
-    return <p> </p>;
+    return <p> Welcome! you are now logged in.</p>;
   }
 
   const handleSignUp = async () => {
     login();
-    return (<SignUpForm />);
+  
   };
 
   

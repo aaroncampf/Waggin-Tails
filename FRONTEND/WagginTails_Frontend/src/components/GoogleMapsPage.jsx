@@ -21,6 +21,7 @@ export default function GoogleMapsPage() {
   }
 
   return (
+    
     <Flex
       position="center"
       flexDirection="column"
@@ -32,7 +33,7 @@ export default function GoogleMapsPage() {
              <input type='text' placeholder="Vet Offices" />
         </Autocomplete> */}
        
-      <Box position="center" left={0} top={0} h="50%" w="50%">
+      <Box position="center" left={0} top={0} h="60vh" w="60vw">
         {/* {Google map box} */}
         <GoogleMap
           center={center}
@@ -56,5 +57,6 @@ export default function GoogleMapsPage() {
         </GoogleMap>
       </Box>
     </Flex>
+    
   );
 }
