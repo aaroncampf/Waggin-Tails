@@ -3,9 +3,8 @@ import React from 'react'
 function Footer() {
     return(
         <div>
-            <footer>
-                    <a href="/">Contact Us</a>
-                    <a href="/">Admin Portal</a>
+            <footer className="footer">
+            <h6> LauchCode Capstone Project 2023    &copy; Kyaria, Jenna &amp; Sneha.  Inspired by Bridget's UI/UX ideas.</h6>
             </footer>
         </div>
     )

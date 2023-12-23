@@ -5,8 +5,9 @@ function HeroSection() {
     return(
     <div className='HeroSection'>
         <h1>Ready to meet your new best friend?</h1>
-        <img src={'/src/images/HeroImage.jpeg'} width={1200}></img>
-    </div>
+        <br/>
+        <h3> Meet our Featured Pets looking for their furrever home !!</h3>
+      </div>
     )
 }
 

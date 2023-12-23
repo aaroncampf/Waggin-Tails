@@ -28,9 +28,9 @@ export default function GoogleMapsPage() {
       h="100vh"
       w="100vw"
     >
-        <Autocomplete>
+        {/* <Autocomplete>
              <input type='text' placeholder="Vet Offices" />
-        </Autocomplete>
+        </Autocomplete> */}
        
       <Box position="center" left={0} top={0} h="50%" w="50%">
         {/* {Google map box} */}

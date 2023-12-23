@@ -8,6 +8,7 @@ const Home = () => {
     <div>
       {loggedIn ? (
         <p>Welcome! You are logged in.</p>
+        
       ) : (
         <p>Please log in</p>
       )}

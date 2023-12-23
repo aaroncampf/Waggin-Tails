@@ -12,6 +12,7 @@ const SignUpForm = () => {
 
   const handleSignUp = async () => {
     login();
+    return (<SignUpForm />);
   };
 
   

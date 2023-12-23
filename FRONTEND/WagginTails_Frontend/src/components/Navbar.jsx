@@ -1,22 +1,22 @@
 import React from "react";
-import  {Link} from "react-router-dom";
+import  {NavLink, Link} from "react-router-dom";
 
-
+import "./Navbar.css";
 export const Navbar= () =>{
 
 
     return (
     <nav>
-        <Link to="/"> WagginTails</Link>
+        <Link to="/" className="title"> WagginTails</Link>
         <ul>
             <li>
-                <Link to="/allDogs">View All Dogs</Link>
+                <NavLink to="/allDogs">View All Dogs</NavLink>
             </li>
             <li> 
-                <Link to="/about">About Us</Link>
+            <NavLink  to="/about">About Us</NavLink >
             </li>
             <li>
-                <Link to="/login">Login/Signup</Link>
+                <NavLink to="/login">Login/Signup</NavLink>
             </li>
         </ul>
 

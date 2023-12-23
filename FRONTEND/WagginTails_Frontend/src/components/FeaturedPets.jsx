@@ -14,12 +14,8 @@ export default function FeaturedPets() {
 
     return(
       
-      <>
-      
-     
-                               
+      <div className='carousel'>
 
-         
 { samplePets.animals.length > 0 ? 
 
          <Swiper
@@ -55,7 +51,7 @@ export default function FeaturedPets() {
 
 : <h2>No Adoptable Dogs Found! Sorry!</h2>
 }
-        </>
+</div>
 
     );
 }
