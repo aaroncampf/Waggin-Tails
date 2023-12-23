@@ -6,33 +6,30 @@ import React from 'react';
 import LoginForm from './components/LoginForm';
 import SignUpForm from './components/SignUpForm';
 import { useAuth } from './components/AuthContext';
-import Header from './components/Header'
+import Login from './components/Login'
 import HeroSection from './components/HeroSection';
 import Button from './components/Button'
 import Footer from './components/Footer'
-
+import FeaturedPets from './components/FeaturedPets';
 const App = () => {
   const { loggedIn, logout } = useAuth();
 
   return (
+    <>
+    <div className="App"> 
+      <Navbar />
+    </div>
     <div>
-      <Header/>
+      {/* <Login/> */}
       <HeroSection/>
       <Button/>
       <FeaturedPets />
       <Footer/>
-      {loggedIn ? (
-        <div>
-          <p>Welcome! You are logged in.</p>
-          <button onClick={logout}>Log Out</button>
-        </div>
-      ) : (
-        <div>
-          <LoginForm />
-          <SignUpForm />
-        </div>
-      )}
+
     </div>
+    
+    </>
+    
   );
 };
 

@@ -1,5 +1,14 @@
 import React, { useState } from 'react';
 import { useAuth } from './AuthContext';
+import {
+  MDBContainer,
+  MDBInput,
+  MDBCheckbox,
+  MDBBtn,
+  MDBIcon
+}
+from 'mdb-react-ui-kit';
+
 
 const LoginForm = () => {
   const [username, setUsername] = useState('');
@@ -8,9 +17,10 @@ const LoginForm = () => {
 
   if (loggedIn) {
     return <p> </p>;
-  }
+  } 
 
-  const handleLogin = async () => {
+  const handleLogin = async (username) => {
+   
     login();
   };
 
@@ -43,24 +53,22 @@ const LoginForm = () => {
 
 
   return (
-    <div>
-      <h2>Login</h2>
-      <form>
-        <label>
-          Username:
-          <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
-        </label>
-        <br />
-        <label>
-          Password:
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-        </label>
-        <br />
-        <button type="button" onClick={handleLogin}>
-          Log In
-        </button>
-      </form>
-    </div>
+      
+    <MDBContainer className="p-3 my-5 d-flex flex-column w-50">
+
+      <MDBInput wrapperClass='mb-4' label='Username' id='username' type='email' value={username} onChange={(e) => setUsername(e.target.value)} placeholder="username" autofocus={true}/>
+      <MDBInput wrapperClass='mb-4' label='Password' id='password' type='password' value={password} onChange={(e) => setPassword(e.target.value)}  autofocus={true}/>
+      <MDBBtn className="mb-4" onClick={handleLogin}>Sign in</MDBBtn>
+      <div className="text-center">
+        <p>Not a member? <a href="#!">Register</a></p>
+      
+</div>
+
+
+</MDBContainer>
+
+     
+  
   );
 };
 
