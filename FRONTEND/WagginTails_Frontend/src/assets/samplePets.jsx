@@ -190,75 +190,7 @@ export const samplePets = {
         }
       }
     },
-  ,
-    {
-      "id": 69972944,
-      "organization_id": "KS47",
-      "url": "https://www.petfinder.com/dog/munchkin-69972944/ks/topeka/helping-hands-humane-society-ks47/?referrer_id=53f3fa2b-1718-4633-bb66-02db1820bdd0&utm_source=api&utm_medium=partnership&utm_content=53f3fa2b-1718-4633-bb66-02db1820bdd0",
-      "type": "Dog",
-      "species": "Dog",
-      "breeds": {
-        "primary": "Pit Bull Terrier",
-        "secondary": null,
-        "mixed": true,
-        "unknown": false
-      },
-      "colors": {
-        "primary": null,
-        "secondary": null,
-        "tertiary": null
-      },
-      "age": "Baby",
-      "gender": "Female",
-      "size": "Medium",
-      "coat": null,
-      "attributes": {
-        "spayed_neutered": true,
-        "house_trained": false,
-        "declawed": null,
-        "special_needs": false,
-        "shots_current": true
-      },
-      "environment": {
-        "children": null,
-        "dogs": null,
-        "cats": null
-      },
-      "tags": [],
-      "name": "Munchkin",
-      "description": "Primary Color: Black W/white Weight: 7.6lbs Age: 0yrs 0mths 9wks Animal has been Spayed",
-      "organization_animal_id": "127094",
-      "photos": [],
-      "primary_photo_cropped": null,
-      "videos": [],
-      "status": "adoptable",
-      "status_changed_at": "2023-12-09T16:18:09+0000",
-      "published_at": "2023-12-09T16:18:08+0000",
-      "distance": null,
-      "contact": {
-        "email": "adopt@hhhstopeka.org",
-        "phone": "785-233-7325",
-        "address": {
-          "address1": "5720 SW 21st St.",
-          "address2": null,
-          "city": "Topeka",
-          "state": "KS",
-          "postcode": "66604",
-          "country": "US"
-        }
-      },
-      "_links": {
-        "self": {
-          "href": "/v2/animals/69972944"
-        },
-        "type": {
-          "href": "/v2/types/dog"
-        },
-        "organization": {
-          "href": "/v2/organizations/ks47"
-        }
-      }
-    },
+  
    
     {
       "id": 69972915,
