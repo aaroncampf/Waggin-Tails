@@ -10,6 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@react-google-maps/api": "^2.19.2",
+    "cors": "^2.8.5",
     "mdb-react-ui-kit": "^7.0.0",
     "mdbreact": "^5.2.0",
     "react": "^18.2.0",

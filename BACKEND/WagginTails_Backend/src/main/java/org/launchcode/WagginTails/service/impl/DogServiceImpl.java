@@ -1,7 +1,9 @@
-package org.launchcode.WagginTails.service;
+package org.launchcode.WagginTails.service.impl;
 
 import org.launchcode.WagginTails.models.Dog;
 import org.launchcode.WagginTails.models.data.DogRepository;
+import org.launchcode.WagginTails.service.DogService;
+import org.launchcode.WagginTails.service.dogNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
