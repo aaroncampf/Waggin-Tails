@@ -4,7 +4,7 @@ import LoggedinMessage from "./LoggedinMessage";
 
 
 const SignUpForm = () => {
-  const [username, setUsername] = useState('');
+  const [userName, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const { login, loggedIn } = useAuth();
 
@@ -19,32 +19,32 @@ const SignUpForm = () => {
 
   
 //   // Perform signup logic here (e.g., API request, user creation)
-// const handleSignUp = async () => {
-//     try {
-//       const response = await fetch('YOUR_API_ENDPOINT/signup', {
-//         method: 'POST',
-//         headers: {
-//           'Content-Type': 'application/json',
-//         },
-//         body: JSON.stringify({ username, password }),
-//       });
+const sendUserSignUp = async () => {
+    try {
+      const response = await fetch( 'http://localhost:8080/user', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ userName, password }),
+      });
   
-//       if (response.ok) {
-//         // Assuming the API returns some data upon successful signup (optional)
-//         const data = await response.json();
-//         // Optionally handle the response data
-//         console.log('Signup successful:', data);
+      if (response.ok) {
+        // Assuming the API returns some data upon successful signup (optional)
+        const data = await response.json();
+        // Optionally handle the response data
+        console.log('Signup successful:', data);
         
-//         // Perform login after successful signup (optional)
-//         login();
-//       } else {
-//         // Handle signup failure (display error message, etc.)
-//         console.error('Signup failed');
-//       }
-//     } catch (error) {
-//       console.error('Error during signup:', error);
-//     }
-//   };
+        // Perform login after successful signup (optional)
+        login();
+      } else {
+        // Handle signup failure (display error message, etc.)
+        console.error('Signup failed');
+      }
+    } catch (error) {
+      console.error('Error during signup:', error);
+    }
+  };
 
 
   return (
@@ -53,7 +53,7 @@ const SignUpForm = () => {
       <form>
         <label>
           Username:
-          <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
+          <input type="text" value={userName} onChange={(e) => setUsername(e.target.value)} />
         </label>
         <br />
         <label>
@@ -61,7 +61,7 @@ const SignUpForm = () => {
           <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
         </label>
         <br />
-        <button type="button" onClick={handleSignUp}>
+        <button type="button" onClick={sendUserSignUp}>
           Sign Up
         </button>
       </form>
