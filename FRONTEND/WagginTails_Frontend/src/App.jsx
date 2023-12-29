@@ -12,6 +12,9 @@ import { Navbar } from './components/Navbar';
 import {Routes,Route}  from "react-router-dom";
 import About from './components/About';
 import Homepage from './components/Homepage';
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
+
 
 const App = () => {
   const { loggedIn, logout } = useAuth();

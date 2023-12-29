@@ -14,7 +14,7 @@ const SignUpForm = () => {
 
   const handleSignUp = async () => {
     login();
-  
+      
   };
 
   

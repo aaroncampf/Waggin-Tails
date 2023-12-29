@@ -27,10 +27,11 @@ public class DogController {
 
 
     @GetMapping("/list")
-    public String listAllDogs(Model model) {
-        List<Dog> dogs = dogService.getAllDogs();
-        model.addAttribute("dogs", dogs);
-        return "dogs/list";
+    List<Dog> listAllDogs(Model model) {
+        //List<Dog> dogs = dogService.getAllDogs();
+        //model.addAttribute("dogs", dogs);
+        //return "dogs/list";
+        return dogService.getAllDogs();
     }
 
     //Get Mapping request for localhost:8080/dog/add to obtain information for dog model
