@@ -65,7 +65,7 @@ const LoginForm = () => {
     {loggedIn ? (
       <div>
         <p>Welcome! You are logged in.</p>
-        <button onClick={logout}>Log Out</button>
+        <MDBBtn onClick={logout()}>Log Out</MDBBtn>
       </div>
     ) : (
       <div className='loginform'>
