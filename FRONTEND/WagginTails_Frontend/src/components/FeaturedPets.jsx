@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {samplePets} from '../assets/samplePets';
@@ -10,13 +10,55 @@ import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 
 export default function FeaturedPets() {
-    console.log(samplePets);
+  const [allDogs, setAllDogs] = useState([]);
+	const [err, setErr] = useState('');
+	//const [selected, setSelected] = useState("");
+    const url= "http://localhost:8080/dog/list";
+	
+const getAllDogs =  async() =>{
+	const options = {
+		method: 'GET',
+		headers: {
+			'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': 'http://localhost:5173/',
+		}
+	};
+
+	 
+	try {
+		const response = await fetch(url, options);
+      
+		if (!response.ok) {
+		  throw new Error(`Error! status: ${response.status}`);
+		}
+  
+		let result = await response.json();
+	   
+		setAllDogs(result);
+		console.log(result);
+	  } catch (err) {
+		setErr(err.message);
+		
+		
+	  }
+	
+
+
+	}
+
+
+  useEffect(() => {
+    getAllDogs();
+	
+  },[]);
+
+
 
     return(
       
       <div className='carousel'>
 
-{ samplePets.animals.length > 0 ? 
+{ allDogs.length > 0 ? 
 
          <Swiper
         effect={'coverflow'}
@@ -38,9 +80,12 @@ export default function FeaturedPets() {
 
         
      
-{samplePets.animals.map((animal) => {   
-			return (<SwiperSlide key={animal.index}>
-          <img src={animal.primary_photo_cropped["full"]}  />
+{allDogs.map((dog) => {   
+			return (<SwiperSlide key={dog.id} >
+          <figure>
+          <img src={dog["dogProfilePhotoUrl"]}  />
+          <figcaption>{dog.name}</figcaption>
+          </figure>
         </SwiperSlide>);
       
     })}

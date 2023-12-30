@@ -14,6 +14,7 @@ import About from './components/About';
 import Homepage from './components/Homepage';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import ViewAllDogs from './components/ViewAllDogs';
 
 
 const App = () => {
@@ -28,7 +29,7 @@ const App = () => {
       <Routes>
       <Route path="/" element={<Homepage />}/>
         <Route path="/about" element={<About />}/>
-        <Route path="/allDogs" element={<></>}/>
+        <Route path="/allDogs" element={<ViewAllDogs />}/>
         <Route path="/login" element={<LoginForm/>}/>
         <Route path="/signup" element={<SignUpForm/>}/>
       </Routes>

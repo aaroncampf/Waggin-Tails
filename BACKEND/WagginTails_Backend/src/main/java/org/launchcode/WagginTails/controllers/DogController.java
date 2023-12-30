@@ -18,6 +18,7 @@ import java.util.Optional;
 
 @RestController
 //@Controller
+@CrossOrigin(origins = "http://localhost:5173/", allowedHeaders = "*")
 @RequestMapping("/dog")
 public class DogController {
 
