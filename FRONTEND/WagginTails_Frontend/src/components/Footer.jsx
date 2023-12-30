@@ -4,7 +4,7 @@ function Footer() {
     return(
         <div>
             <footer className="footer">
-            <h6> LauchCode Capstone Project 2023    &copy; Kyaria, Jenna &amp; Sneha.  Inspired by Bridget's UI/UX ideas.</h6>
+            <h6> LaunchCode Capstone Project 2023    &copy; Kyaria, Jenna &amp; Sneha.  Inspired by Bridget's UI/UX ideas.</h6>
             </footer>
         </div>
     )
