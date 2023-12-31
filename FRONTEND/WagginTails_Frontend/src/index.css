@@ -28,7 +28,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: whitesmoke;
+  background-color: wheat;
 }
 
 h1 {
@@ -93,7 +93,7 @@ button:focus-visible {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h2,h3,h4 ,h1{
-
+h1,h2,h3,h4 ,h1{
+  padding: 0.1rem;
   text-align: center;
 }
