@@ -1,5 +1,7 @@
 import React, {  useState, useEffect } from 'react';
 import './ViewAllDogs.css'
+import { MDBTable, MDBTableHead, MDBTableBody } from 'mdb-react-ui-kit';
+
 export default function ViewAllDogs(){
     const [allDogs, setAllDogs] = useState([]);
 	const [err, setErr] = useState('');
@@ -49,18 +51,57 @@ const getAllDogs =  async() =>{
 
     return( 
         <>
-            <div>
+          
                <h1> Here are all of our adoptable dogs.</h1>
+               <MDBTable align="middle" striped hover table-sm  responsive>
+               <MDBTableHead dark>
+                <tr>
+                    
+                    <th scope='col'>Profile Photo</th>
+                    <th scope='col' >Name</th>
+                    <th scope='col' >Breed</th>
+                    <th scope='col' >Age</th>
+                    <th scope='col' >Primary Color</th>
+                    <th scope='col' >About this dog</th>
+                    <th scope='col' ></th>
+                </tr>
+                </MDBTableHead>
+                <MDBTableBody>
                {allDogs.map((dog) => {   
-			return ( <div id={dog.id} className='individualDog'>
-          <img src={dog["dogProfilePhotoUrl"]} width="500px" height="500px"  /> 
-          <div className='dogDetails'> </div>
-          <br/>
-          </div>
+			return ( 
+          
+          
+               
+                <tr scope="row" id={dog.id} className='individualDog'>
+                    <td >
+                    <img src={dog["dogProfilePhotoUrl"]} width="300px" height="300px"  />   
+                    </td>
+                    <td>
+                        {dog.name}
+                    </td>
+                    <td>
+                        {dog.breed}
+                    </td>
+                    <td>
+                        {dog.age}
+                    </td>
+                    <td>
+                        {dog.color}
+                    </td>
+                    <td>
+                        {dog.natureDesc}
+                    </td>
+                    <td>
+                    <button type="button" class="btn btn-dark">Adopt Me!</button>
+                    </td>
+                </tr>
+           
         );
       
-    })}              
-            </div>
+    })}    
+         </MDBTableBody>
+         </MDBTable>
+            
         </>  
 
     );

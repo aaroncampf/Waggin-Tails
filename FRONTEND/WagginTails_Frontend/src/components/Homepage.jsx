@@ -9,10 +9,8 @@ export const Homepage= () =>{
     return (
         <>
         <HeroSection/>
-        <Button/>
         <FeaturedPets />
   
-       
         </>
 
     );
