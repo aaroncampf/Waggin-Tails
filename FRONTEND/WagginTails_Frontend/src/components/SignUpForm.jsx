@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 import { useAuth } from './AuthContext';
 import LoggedinMessage from "./LoggedinMessage";
+import {
+  MDBContainer,
+  MDBInput,
+  MDBCheckbox,
+  MDBBtn,
+  MDBIcon
+}
+from 'mdb-react-ui-kit';
 
 
 const SignUpForm = () => {
@@ -51,19 +59,19 @@ const sendUserSignUp = async () => {
     <div>
       <h2>Sign Up</h2>
       <form>
-        <label>
+        <MDBlabel>
           Username:
           <input type="text" value={userName} onChange={(e) => setUsername(e.target.value)} />
-        </label>
+        </MDBlabel>
         <br />
-        <label>
+        <MDBlabel>
           Password:
           <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-        </label>
+        </MDBlabel>
         <br />
-        <button type="button" onClick={sendUserSignUp}>
+        <MDBBtnbutton type="submit" onClick={sendUserSignUp}>
           Sign Up
-        </button>
+        </MDBBtnbutton>
       </form>
     </div>
   );

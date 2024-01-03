@@ -7,6 +7,9 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
+import {Routes, Route, useNavigate} from 'react-router-dom';
+import ViewAllDogs from './ViewAllDogs';
+
 
 
 export default function FeaturedPets() {
@@ -15,6 +18,14 @@ export default function FeaturedPets() {
 	//const [selected, setSelected] = useState("");
     const url= "http://localhost:8080/dog/list";
 	
+const navigate = useNavigate();
+
+const navigateToAllDogs = () => {
+  
+  navigate('/allDogs');
+};
+
+
 const getAllDogs =  async() =>{
 	const options = {
 		method: 'GET',
@@ -83,9 +94,9 @@ const getAllDogs =  async() =>{
 {allDogs.map((dog) => {   
 			return (<SwiperSlide key={dog.id} >
           <figure>
-          <img src={dog["dogProfilePhotoUrl"]}  />
-          <figcaption>{dog.name}</figcaption>
+          <img src={dog["dogProfilePhotoUrl"]} width="100%" height="100%" onClick={navigateToAllDogs}/>
           </figure>
+          <figcaption><em><h4>{dog.name}</h4></em></figcaption>
         </SwiperSlide>);
       
     })}
@@ -96,6 +107,11 @@ const getAllDogs =  async() =>{
 
 : <h2>No Adoptable Dogs Found! Sorry!</h2>
 }
+
+<Routes>
+          <Route path="/allDogs" element={<ViewAllDogs />} />
+       
+        </Routes>
 </div>
 
     );
