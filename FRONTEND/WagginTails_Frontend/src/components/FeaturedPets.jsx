@@ -13,7 +13,7 @@ export default function FeaturedPets() {
   const [allDogs, setAllDogs] = useState([]);
 	const [err, setErr] = useState('');
 	//const [selected, setSelected] = useState("");
-    const url= "http://localhost:8080/dog/list";
+    const url= "http://localhost:8080/api/list";
 	
 const getAllDogs =  async() =>{
 	const options = {

@@ -33,21 +33,19 @@ public class Dog {
     private String breed;
 
 
-    @NotNull(message = "Age should not be blank")
-    private int age;
+    @NotEmpty(message = "Age should not be blank")
+    private String age;
 
     @NotEmpty(message = "Please enter dog profile photo URL")
     private String dogProfilePhotoUrl;
 
 
-    @NotEmpty(message = "Please enter dog photo-1")
     private String photoOneUrl;
 
-    @NotEmpty(message = "Please enter photo-2")
     private String photoTwoUrl;
 
 
-    public Dog(int id, String name, String natureDesc, String color, String breed, int age, String dogProfilePhotoUrl, String photoOneUrl, String photoTwoUrl) {
+    public Dog(int id, String name, String natureDesc, String color, String breed, String age, String dogProfilePhotoUrl, String photoOneUrl, String photoTwoUrl) {
         this.id = id;
         this.name = name;
         this.natureDesc = natureDesc;
@@ -116,11 +114,11 @@ public class Dog {
         this.breed = breed;
     }
 
-    public int getAge() {
+    public String getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(String age) {
         this.age = age;
     }
 

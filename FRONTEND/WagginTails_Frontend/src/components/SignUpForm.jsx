@@ -21,7 +21,7 @@ const SignUpForm = () => {
 //   // Perform signup logic here (e.g., API request, user creation)
 const sendUserSignUp = async () => {
     try {
-      const response = await fetch( 'http://localhost:8080/user', {
+      const response = await fetch( 'http://localhost:8080/api/user', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
