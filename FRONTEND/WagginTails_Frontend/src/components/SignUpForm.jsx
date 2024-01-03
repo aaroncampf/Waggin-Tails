@@ -59,19 +59,19 @@ const sendUserSignUp = async () => {
     <div>
       <h2>Sign Up</h2>
       <form>
-        <MDBlabel>
+        <label>
           Username:
           <input type="text" value={userName} onChange={(e) => setUsername(e.target.value)} />
-        </MDBlabel>
+        </label>
         <br />
-        <MDBlabel>
+        <label>
           Password:
           <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-        </MDBlabel>
+        </label>
         <br />
-        <MDBBtnbutton type="submit" onClick={sendUserSignUp}>
+        <button type="submit" onClick={sendUserSignUp}>
           Sign Up
-        </MDBBtnbutton>
+        </button>
       </form>
     </div>
   );
