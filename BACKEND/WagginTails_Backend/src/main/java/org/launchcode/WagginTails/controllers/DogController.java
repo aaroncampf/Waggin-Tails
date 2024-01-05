@@ -16,9 +16,9 @@ import java.util.List;
 import java.util.Optional;
 
 
-@RestController
-//@Controller
-@CrossOrigin(origins = "http://localhost:5173/", allowedHeaders = "*")
+//@RestController
+@Controller
+//@CrossOrigin(origins = "http://localhost:5173/", allowedHeaders = "*")
 @RequestMapping("/dog")
 public class DogController {
 
@@ -28,11 +28,11 @@ public class DogController {
 
 
     @GetMapping("/list")
-    List<Dog> listAllDogs(Model model) {
-        //List<Dog> dogs = dogService.getAllDogs();
-        //model.addAttribute("dogs", dogs);
-        //return "dogs/list";
-        return dogService.getAllDogs();
+    public String listAllDogs(Model model) {
+        List<Dog> dogs = dogService.getAllDogs();
+        model.addAttribute("dogs", dogs);
+        return "dogs/list";
+//        return dogService.getAllDogs();
     }
 
     //Get Mapping request for localhost:8080/dog/add to obtain information for dog model

@@ -26,3 +26,21 @@ padding-top: 3rem;
 
     align-items: center;
 }
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+    margin-bottom: 20px; /* Add margin-bottom to create space below the button */
+  }
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /*Adjust distance between Adoption Form Button and the Adoption Form*/
+}
+  
+  .center-button {
+    margin-top: 20px; /* Adjust the margin based on your design */
+  }
