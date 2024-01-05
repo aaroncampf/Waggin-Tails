@@ -1,10 +1,7 @@
 package org.launchcode.WagginTails.models;
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
@@ -44,6 +41,11 @@ public class Dog {
 
     private String photoTwoUrl;
 
+
+    private String adoptstatus;
+
+    @OneToOne(mappedBy = "dog")
+    private AdoptionApplication adoptionApplication;
 
     public Dog(int id, String name, String natureDesc, String color, String breed, String age, String dogProfilePhotoUrl, String photoOneUrl, String photoTwoUrl) {
         this.id = id;

@@ -46,7 +46,7 @@ public class DogServiceImpl implements DogService {
         if (result.isPresent()) {
             return result.get();
         }
-        throw new dogNotFoundException("Could not find user with ID" + id);
+        throw new dogNotFoundException("Could not find dog with ID" + id);
     }
         /*Dog dogProfile = dogRepository.findById(id).get();
         return dogProfile.setId(id);*/
