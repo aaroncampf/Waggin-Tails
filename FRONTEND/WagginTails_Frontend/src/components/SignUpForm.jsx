@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 import { useAuth } from './AuthContext';
 import LoggedinMessage from "./LoggedinMessage";
+import {
+  MDBContainer,
+  MDBInput,
+  MDBCheckbox,
+  MDBBtn,
+  MDBIcon
+}
+from 'mdb-react-ui-kit';
 
 
 const SignUpForm = () => {
@@ -21,7 +29,7 @@ const SignUpForm = () => {
 //   // Perform signup logic here (e.g., API request, user creation)
 const sendUserSignUp = async () => {
     try {
-      const response = await fetch( 'http://localhost:8080/user', {
+      const response = await fetch( 'http://localhost:8080/api/user', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -61,7 +69,7 @@ const sendUserSignUp = async () => {
           <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
         </label>
         <br />
-        <button type="button" onClick={sendUserSignUp}>
+        <button type="submit" onClick={sendUserSignUp}>
           Sign Up
         </button>
       </form>

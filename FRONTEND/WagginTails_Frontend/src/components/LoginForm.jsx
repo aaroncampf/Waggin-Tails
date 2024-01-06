@@ -37,7 +37,7 @@ const LoginForm = () => {
     // If authentication is successful, call the login function
 const sendUserLogin = async () => {
     try {
-      const response = await fetch('http://localhost:8080/user', {
+      const response = await fetch('http://localhost:8080/api/user',  {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
