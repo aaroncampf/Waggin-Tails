@@ -1,0 +1,32 @@
+.step-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+
+  .button-container button {
+    padding: 10px 20px; /* Adjust the padding as needed */
+    margin: 0 10px; /* Adjust the margin between buttons as needed */
+  }
+  
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* Adjust the gap between the fields */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .vet-fees-question {
+    max-width: 400px; /* Adjust the maximum width as needed */
+    margin-bottom: 15px; /* Optional: Add some spacing between the question and the radio buttons */
+  }

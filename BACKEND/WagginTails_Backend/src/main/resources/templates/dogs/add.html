@@ -19,7 +19,7 @@
 
     <h1>[[${pageTitle}]]</h1>
 </head>
-<body>
+<body style="padding: 25px;">
 <p th:text="${errorMsg}" style="color:red;"></p>
 
 <form role ="form" method="post" th:action="@{/dog/add}" th:object="${dog}">
