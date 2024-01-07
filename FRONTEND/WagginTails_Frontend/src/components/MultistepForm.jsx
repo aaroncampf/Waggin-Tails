@@ -5,8 +5,9 @@ import Step3AdditionalQs from './Step3AdditionalQs';
 import SubmissionConfirmation from './SubmissionConfirmation';
 import SubmissionFailure from './SubmissionFailure';
 
-const MultistepForm = () => {
+const MultistepForm = ({dog}) => {
   const [step, setStep] = useState(1);
+  console.log("in multistep form",dog)
   const [formData, setFormData] = useState({
     // Fields for Step 1 (Step1ContactInfo)
     name: '',

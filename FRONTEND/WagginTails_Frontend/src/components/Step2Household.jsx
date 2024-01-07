@@ -18,14 +18,14 @@ const Step2Household = ({ formData, setFormData, prevStep, nextStep, submitForm 
   };
 
   return (
-    <div>
+    <div className='step-container'>
       <h2>Household</h2>
 
       {/* Adding a radio button for a choice */}
       {/* string */}
       <label>
         Do you own or rent?
-        <div>
+        <div >
           <input
             type="radio"
             name="home"

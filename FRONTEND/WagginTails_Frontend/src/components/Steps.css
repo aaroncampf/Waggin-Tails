@@ -1,13 +1,15 @@
 .step-container {
+    margin: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   .button-container {
+    margin: 3rem;
     display: flex;
     justify-content: center;
-    margin-top: 20px; /* Adjust the margin as needed */
+    margin-top: 50px; /* Adjust the margin as needed */
   }
 
   .button-container button {
@@ -16,14 +18,17 @@
   }
   
   .form-grid {
+    margin: 3rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px; /* Adjust the gap between the fields */
+    gap: 20px; /* Adjust the gap between the fields */
   }
   
   label {
     display: block;
     margin-bottom: 5px;
+    margin: 1rem;
+    
   }
 
   .vet-fees-question {

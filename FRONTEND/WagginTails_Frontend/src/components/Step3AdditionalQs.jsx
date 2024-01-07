@@ -22,7 +22,7 @@ const Step3AdditionalQs = ({ formData, setFormData, prevStep, submitForm }) => {
   };
 
   return (
-    <div>
+    <div className='step-container'>
       <h2>Additional Questions</h2>
 
       <label>When no one is home, where will your dog stay?</label>
