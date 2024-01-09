@@ -22,8 +22,8 @@ const Step1ContactInfo = ({ formData, setFormData, nextStep }) => {
         <div>
           <input
             type="text"
-            name="full_name"
-            value={formData.full_name}
+            name="fullName"
+            value={formData.fullName}
             onChange={handleChange}
           />
           <label>Name</label>
@@ -42,8 +42,8 @@ const Step1ContactInfo = ({ formData, setFormData, nextStep }) => {
         <div>
           <input
             type="tel"
-            name="phone_number"
-            value={formData.phone_number}
+            name="phoneNumber"
+            value={formData.phoneNumber}
             onChange={handleChange}
           />
           <label>Phone Number</label>
@@ -52,8 +52,8 @@ const Step1ContactInfo = ({ formData, setFormData, nextStep }) => {
         <div>
           <input
             type="text"
-            name="street_address"
-            value={formData.street_address}
+            name="streetAddress"
+            value={formData.streetAddress}
             onChange={handleChange}
           />
           <label>Street Address</label>

@@ -51,7 +51,7 @@ public class ApiController {
     Dog getDogById(@PathVariable("id") Integer id, Model model) throws dogNotFoundException {
         //List<Dog> dogs = dogService.getAllDogs();
         //model.addAttribute("dogs", dogs);
-        //return "dogs/list";;
+        //return "dogs/list";;o
         return  dogService.findDogId(id);
     }
     @PostMapping("/saveAdoptionApplication")

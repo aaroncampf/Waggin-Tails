@@ -8,27 +8,28 @@ import SubmissionFailure from './SubmissionFailure';
 const MultistepForm = ({dog}) => {
   const [step, setStep] = useState(1);
   console.log("in multistep form",dog)
+ // let dog_Stringobject= JSON.stringify(dog);
+  console.log(dog)
   const [formData, setFormData] = useState({
     // Fields for Step 1 (Step1ContactInfo)
-    full_name: '',
-    email: '',
-    phone_number: '',
-    street_address: '',
-    city: '',
-    state: '',
-    zipcode: '',
-
-    // Fields for Step 2 (Step2Household)
-    home_ownership_type: '', // This field represents the choice of owning or renting
-    total_adults: '',
-    total_children: '',
-
-    // Fields for Step 3 (Step3AdditionalQs)
-    dog_stay_when_nobody_home: '',
-    dog_stay_alone_hours: '',
-    dog_sleeping_place: '',
-    is_financially_prepared: '',
-    dog: dog,
+    fullName: '',
+      email: '',
+      phoneNumber: '',
+      streetAddress: '',
+      city: '',
+      state: '',
+      zipcode: '',
+  
+      homeOwnershipType: '', 
+      totalAdults: 0,
+      totalChildren: 0,
+  
+      
+      dogStayWhenNobodyHome: '',
+      dogStayAloneHours: 0,
+      dogSleepingPlace: '',
+      isFinanciallyPrepared: '',
+      dog: dog,
   });
 
   const [submitted, setSubmitted] = useState(false);
@@ -45,23 +46,23 @@ const MultistepForm = ({dog}) => {
   const resetForm = () => {
     setFormData({
      
-      full_name: '',
+      fullName: '',
       email: '',
-      phone_number: '',
-      street_address: '',
+      phoneNumber: '',
+      streetAddress: '',
       city: '',
       state: '',
       zipcode: '',
   
-      home_ownership_type: '', 
-      total_adults: 0,
-      total_children: 0,
+      homeOwnershipType: '', 
+      totalAdults: 0,
+      totalChildren: 0,
   
       
-      dog_stay_when_nobody_home: '',
-      dog_stay_alone_hours: '',
-      dog_sleeping_place: '',
-      is_financially_prepared: '',
+      dogStayWhenNobodyHome: '',
+      dogStayAloneHours: 0,
+      dogSleepingPlace: '',
+      isFinanciallyPrepared: '',
       dog: dog,
     });
     setStep(1);
@@ -70,8 +71,9 @@ const MultistepForm = ({dog}) => {
   };
 
   const submitForm = () => {
+    console.log("requestbody",JSON.stringify(formData))
     // ***** Here you can send the formData to your server or perform other actions *****
-    fetch('https://your-api-endpoint.com/submit-form', {
+    fetch('http://localhost:8080/api/saveAdoptionApplication', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -79,11 +81,15 @@ const MultistepForm = ({dog}) => {
       },
       body: JSON.stringify(formData),
     })
+     
       .then(response => {
         if (!response.ok) {
           throw new Error('Form submission failed');
         }
+        
+        
         return response.json();
+        
       })
       .then(data => {
         console.log('Form submission successful:', data);

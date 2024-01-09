@@ -23,12 +23,12 @@ public class AdoptionApplication {
         this.dog = dog;
     }
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.MERGE)
     @Valid
     @NotNull
     private Dog dog;
 
-    @NotEmpty(message ="Please enter Name")
+    //@NotEmpty(message ="Please enter Name")
     private String fullName;
 
 
@@ -38,50 +38,50 @@ public class AdoptionApplication {
     private String email;
 
 
-    @NotEmpty(message = "Please enter phone number")
+    //@NotEmpty(message = "Please enter phone number")
     private String phoneNumber;
 
 
-    @NotEmpty(message = "Please enter Street address")
+    //@NotEmpty(message = "Please enter Street address")
     private String streetAddress;
 
-    @NotEmpty(message = "Please enter City")
+   // @NotEmpty(message = "Please enter City")
     private String city;
 
 
-    @NotEmpty(message = "Please enter State ")
+   // @NotEmpty(message = "Please enter State ")
     private String state;
 
-    @NotEmpty(message = "Please enter Zipcode ")
+   // @NotEmpty(message = "Please enter Zipcode ")
     private String zipcode;
 
 
 
     private String homeOwnershipType;
 
-    @NotEmpty(message = "Please enter number of adults living in your space. ")
+
     private Integer totalAdults;
 
-    @NotEmpty(message = "Please enter number of children living in your space. ")
+    //@NotEmpty(message = "Please enter number of children living in your space. ")
     private Integer totalChildren;
 
-    @NotEmpty(message = "Please enter dog staying place when no one is home. ")
+    //@NotEmpty(message = "Please enter dog staying place when no one is home. ")
     private String dogStayWhenNobodyHome;
 
 
-    @NotEmpty(message = "Please enter approximate hours for which dog will stay alone. ")
+    //@NotEmpty(message = "Please enter approximate hours for which dog will stay alone. ")
     private Integer dogStayAloneHours;
 
 
-    @NotEmpty(message = "Please enter place where the dog will sleep. ")
+    //@NotEmpty(message = "Please enter place where the dog will sleep. ")
     private String dogSleepingPlace;
 
-    @NotEmpty(message = "Please enter financial question. ")
-    private boolean isFinanciallyPrepared;
+
+    private String isFinanciallyPrepared;
 
     private boolean isApproved= false;
 
-    public AdoptionApplication(String fullName, String email, String phoneNumber, String streetAddress, String city, String state, String zipcode, String homeOwnershipType, Integer totalAdults, Integer totalChildren, String dogStayWhenNobodyHome, Integer dogStayAloneHours, String dogSleepingPlace, boolean isFinanciallyPrepared) {
+    public AdoptionApplication(String fullName, String email, String phoneNumber, String streetAddress, String city, String state, String zipcode, String homeOwnershipType, Integer totalAdults, Integer totalChildren, String dogStayWhenNobodyHome, Integer dogStayAloneHours, String dogSleepingPlace, String isFinanciallyPrepared) {
         this.fullName = fullName;
         this.email = email;
         this.phoneNumber = phoneNumber;
@@ -215,11 +215,11 @@ public class AdoptionApplication {
         this.dogSleepingPlace = dogSleepingPlace;
     }
 
-    public boolean isFinanciallyPrepared() {
+    public String isFinanciallyPrepared() {
         return isFinanciallyPrepared;
     }
 
-    public void setFinanciallyPrepared(boolean financiallyPrepared) {
+    public void setFinanciallyPrepared(String financiallyPrepared) {
         isFinanciallyPrepared = financiallyPrepared;
     }
 

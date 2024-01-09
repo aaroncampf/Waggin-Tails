@@ -28,9 +28,9 @@ const Step2Household = ({ formData, setFormData, prevStep, nextStep, submitForm 
         <div >
           <input
             type="radio"
-            name="home_ownership_type"
+            name="homeOwnershipType"
             value="own"
-            checked={formData.home_ownership_type === 'own'}
+            checked={formData.homeOwnershipType === 'own'}
             onChange={handleChange}
           />
           Own
@@ -38,9 +38,9 @@ const Step2Household = ({ formData, setFormData, prevStep, nextStep, submitForm 
         <div>
           <input
             type="radio"
-            name="home_ownership_type"
+            name="homeOwnershipType"
             value="rent"
-            checked={formData.home_ownership_type === 'rent'}
+            checked={formData.homeOwnershipType === 'rent'}
             onChange={handleChange}
           />
           Rent
@@ -50,8 +50,8 @@ const Step2Household = ({ formData, setFormData, prevStep, nextStep, submitForm 
     <label>How many adults live at this address?</label>
         <input
           type="number"
-          name="total_adults"
-          value={formData.total_adults}
+          name="totalAdults"
+          value={formData.totalAdults}
           onChange={handleChange}
         />
         
@@ -59,8 +59,8 @@ const Step2Household = ({ formData, setFormData, prevStep, nextStep, submitForm 
     <label>How many children live at this address?</label>
         <input
           type="number"
-          name="total_children"
-          value={formData.total_children}
+          name="totalChildren"
+          value={formData.totalChildren}
           onChange={handleChange}
         />
       

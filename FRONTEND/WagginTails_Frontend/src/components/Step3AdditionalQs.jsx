@@ -30,8 +30,8 @@ const Step3AdditionalQs = ({ formData, setFormData, prevStep, submitForm }) => {
       <label>When no one is home, where will your dog stay?</label>
         <input
           type="text"
-          name="dog_stay_when_nobody_home"
-          value={formData.dog_stay_when_nobody_home}
+          name="dogStayWhenNobodyHome"
+          value={formData.dogStayWhenNobodyHome}
           onChange={handleChange}
         />
         
@@ -39,16 +39,16 @@ const Step3AdditionalQs = ({ formData, setFormData, prevStep, submitForm }) => {
     <label>How many hours a day will the dog spend alone?</label>
         <input
           type="number"
-          name="dog_stay_alone_hours"
-          value={formData.dog_stay_alone_hours}
+          name="dogStayAloneHours"
+          value={formData.dogStayAloneHours}
           onChange={handleChange}
         />
 
     <label>Where will your dog sleep at night?</label>
         <input
           type="text"
-          name="dog_sleeping_place"
-          value={formData.dog_sleeping_place}
+          name="dogSleepingPlace"
+          value={formData.dogSleepingPlace}
           onChange={handleChange}
         />
 
@@ -58,9 +58,9 @@ const Step3AdditionalQs = ({ formData, setFormData, prevStep, submitForm }) => {
   <div>
     <input
       type="radio"
-      name="is_financially_prepared"
+      name="isFinanciallyPrepared"
       value="Yes"
-      checked={formData.is_financially_prepared === 'Yes'}
+      checked={formData.isFinanciallyPrepared === 'Yes'}
       onChange={handleChange}
     />
     Yes
