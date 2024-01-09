@@ -10,23 +10,25 @@ const MultistepForm = ({dog}) => {
   console.log("in multistep form",dog)
   const [formData, setFormData] = useState({
     // Fields for Step 1 (Step1ContactInfo)
-    name: '',
+    full_name: '',
     email: '',
-    phone: '',
-    address: '',
+    phone_number: '',
+    street_address: '',
     city: '',
     state: '',
+    zipcode: '',
 
     // Fields for Step 2 (Step2Household)
-    home: '', // This field represents the choice of owning or renting
-    adults: '',
-    children: '',
+    home_ownership_type: '', // This field represents the choice of owning or renting
+    total_adults: '',
+    total_children: '',
 
     // Fields for Step 3 (Step3AdditionalQs)
-    stay: '',
-    alone: '',
-    night: '',
-    vet: '',
+    dog_stay_when_nobody_home: '',
+    dog_stay_alone_hours: '',
+    dog_sleeping_place: '',
+    is_financially_prepared: '',
+    dog: dog,
   });
 
   const [submitted, setSubmitted] = useState(false);
@@ -42,20 +44,25 @@ const MultistepForm = ({dog}) => {
 
   const resetForm = () => {
     setFormData({
-      // Reset fields as needed for each step
-      name: '',
+     
+      full_name: '',
       email: '',
-      phone: '',
-      address: '',
+      phone_number: '',
+      street_address: '',
       city: '',
       state: '',
-      home: '',
-      adults: '',
-      children: '',
-      stay: '',
-      alone: '',
-      night: '',
-      vet: '',
+      zipcode: '',
+  
+      home_ownership_type: '', 
+      total_adults: 0,
+      total_children: 0,
+  
+      
+      dog_stay_when_nobody_home: '',
+      dog_stay_alone_hours: '',
+      dog_sleeping_place: '',
+      is_financially_prepared: '',
+      dog: dog,
     });
     setStep(1);
     setSubmitted(false);
@@ -68,6 +75,7 @@ const MultistepForm = ({dog}) => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': 'http://localhost:5173/',
       },
       body: JSON.stringify(formData),
     })
