@@ -18,19 +18,19 @@ const Step2Household = ({ formData, setFormData, prevStep, nextStep, submitForm 
   };
 
   return (
-    <div>
+    <div className='step-container'>
       <h2>Household</h2>
 
       {/* Adding a radio button for a choice */}
       {/* string */}
       <label>
         Do you own or rent?
-        <div>
+        <div >
           <input
             type="radio"
-            name="home"
+            name="home_ownership_type"
             value="own"
-            checked={formData.home === 'own'}
+            checked={formData.home_ownership_type === 'own'}
             onChange={handleChange}
           />
           Own
@@ -38,9 +38,9 @@ const Step2Household = ({ formData, setFormData, prevStep, nextStep, submitForm 
         <div>
           <input
             type="radio"
-            name="home"
+            name="home_ownership_type"
             value="rent"
-            checked={formData.home === 'rent'}
+            checked={formData.home_ownership_type === 'rent'}
             onChange={handleChange}
           />
           Rent
@@ -50,8 +50,8 @@ const Step2Household = ({ formData, setFormData, prevStep, nextStep, submitForm 
     <label>How many adults live at this address?</label>
         <input
           type="number"
-          name="adults"
-          value={formData.adults}
+          name="total_adults"
+          value={formData.total_adults}
           onChange={handleChange}
         />
         
@@ -59,8 +59,8 @@ const Step2Household = ({ formData, setFormData, prevStep, nextStep, submitForm 
     <label>How many children live at this address?</label>
         <input
           type="number"
-          name="children"
-          value={formData.children}
+          name="total_children"
+          value={formData.total_children}
           onChange={handleChange}
         />
       

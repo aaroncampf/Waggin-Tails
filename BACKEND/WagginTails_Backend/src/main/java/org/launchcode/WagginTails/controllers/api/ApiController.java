@@ -5,6 +5,7 @@ import org.launchcode.WagginTails.models.Dog;
 import org.launchcode.WagginTails.models.User;
 import org.launchcode.WagginTails.models.data.UserRepository;
 import org.launchcode.WagginTails.service.DogService;
+import org.launchcode.WagginTails.service.dogNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -38,4 +39,11 @@ public class ApiController {
         return dogService.getAllDogs();
     }
 
+    @GetMapping("/dog/{id}")
+    Dog getDogById(@PathVariable("id") Integer id, Model model) throws dogNotFoundException {
+        //List<Dog> dogs = dogService.getAllDogs();
+        //model.addAttribute("dogs", dogs);
+        //return "dogs/list";;
+        return  dogService.findDogId(id);
+    }
 }

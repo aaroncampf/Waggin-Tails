@@ -2,15 +2,16 @@ import React from 'react';
 import './Steps.css';
 
 const Step3AdditionalQs = ({ formData, setFormData, prevStep, submitForm }) => {
+
   const handleChange = (e) => {
     const { name, value } = e.target;
-      // Convert string to boolean
-  const booleanValue = value === 'true';
+   
     setFormData((prevData) => ({
       ...prevData,
-    [name]: booleanValue,
+      [name]: value,
     }));
   };
+
 
   const handlePrev = () => {
     prevStep();
@@ -22,44 +23,44 @@ const Step3AdditionalQs = ({ formData, setFormData, prevStep, submitForm }) => {
   };
 
   return (
-    <div>
+    <div className='step-container'>
       <h2>Additional Questions</h2>
+  
 
       <label>When no one is home, where will your dog stay?</label>
         <input
           type="text"
-          name="stay"
-          value={formData.stay}
+          name="dog_stay_when_nobody_home"
+          value={formData.dog_stay_when_nobody_home}
           onChange={handleChange}
         />
         
         
     <label>How many hours a day will the dog spend alone?</label>
         <input
-          type="text"
-          name="alone"
-          value={formData.alone}
+          type="number"
+          name="dog_stay_alone_hours"
+          value={formData.dog_stay_alone_hours}
           onChange={handleChange}
         />
 
     <label>Where will your dog sleep at night?</label>
         <input
           type="text"
-          name="night"
-          value={formData.night}
+          name="dog_sleeping_place"
+          value={formData.dog_sleeping_place}
           onChange={handleChange}
         />
 
-
-{/* boolean */}
+         {/* boolean */}
 <label className="vet-fees-question">
   Are you prepared to spend $150-300 per year in veterinary fees for vaccinations and medications?
   <div>
     <input
       type="radio"
-      name="vet"
-      value={true}
-      checked={formData.vet === true}
+      name="is_financially_prepared"
+      value="Yes"
+      checked={formData.is_financially_prepared === 'Yes'}
       onChange={handleChange}
     />
     Yes
@@ -67,14 +68,15 @@ const Step3AdditionalQs = ({ formData, setFormData, prevStep, submitForm }) => {
   <div>
     <input
       type="radio"
-      name="vet"
-      value={false}
-      checked={formData.vet === false}
+      name="is_financially_prepared"
+      value="No"
+      checked={formData.is_financially_prepared === 'No'}
       onChange={handleChange}
     />
     No
   </div>
-</label>      
+</label>  
+   
 
       <div className="button-container">
         <button onClick={handlePrev}>Previous</button>
