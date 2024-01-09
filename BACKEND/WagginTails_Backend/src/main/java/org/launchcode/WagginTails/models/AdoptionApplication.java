@@ -215,12 +215,12 @@ public class AdoptionApplication {
         this.dogSleepingPlace = dogSleepingPlace;
     }
 
-    public String isFinanciallyPrepared() {
+    public String getIsFinanciallyPrepared() {
         return isFinanciallyPrepared;
     }
 
-    public void setFinanciallyPrepared(String financiallyPrepared) {
-        isFinanciallyPrepared = financiallyPrepared;
+    public void setIsFinanciallyPrepared(String isFinanciallyPrepared) {
+        this.isFinanciallyPrepared = isFinanciallyPrepared;
     }
 
     public boolean isApproved() {

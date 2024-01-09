@@ -68,9 +68,9 @@ const Step3AdditionalQs = ({ formData, setFormData, prevStep, submitForm }) => {
   <div>
     <input
       type="radio"
-      name="is_financially_prepared"
+      name="isFinanciallyPrepared"
       value="No"
-      checked={formData.is_financially_prepared === 'No'}
+      checked={formData.isFinanciallyPrepared === 'No'}
       onChange={handleChange}
     />
     No
