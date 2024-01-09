@@ -16,41 +16,32 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import ViewAllDogs from './components/ViewAllDogs';
 
 import MultiStepForm from './components/MultistepForm';
+import ApplicationForm from './components/ApplicationForm';
 
 
 const App = () => {
-  const { loggedIn, logout } = useAuth();
-  const [showForm, setShowForm] = useState(false);
-
-  const handleSpecificButtonClick = () => {
-    setShowForm((prevShowForm) => !prevShowForm);
-  };
 
   return (
     <div className="App">
       <div className="content">
         <Navbar />
         <Routes>
-          <Route path="/" element={<Homepage />} />
+          <Route path="*" element={<Homepage />} />
           <Route path="/about" element={<About />} />
           <Route path="/allDogs" element={<ViewAllDogs />} />
           <Route path="/login" element={<LoginForm />} />
           <Route path="/signup" element={<SignUpForm />} />
+          <Route path="/applicationform" element={<ApplicationForm />} />
         </Routes>
 
         {/* Add your specific button */}
-        <div className="button-container">
+        {/* <div className="button-container">
           <button onClick={handleSpecificButtonClick} className="center-button">
             Adoption Form
           </button>
-        </div>
+        </div> */}
 
-        {/* Conditionally render the form based on the showForm state */}
-        {showForm && (
-          <div className="center-container">
-            <MultiStepForm />
-          </div>
-        )}
+       
       </div>
 
       <Footer />
