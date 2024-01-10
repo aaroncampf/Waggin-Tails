@@ -22,16 +22,13 @@
 .about{
 padding-top: 3rem;
 }
-.loginform{
 
-    align-items: center;
-}
 
 .button-container {
     display: flex;
     justify-content: center;
-    margin-top: 20px; /* Adjust the margin as needed */
-    margin-bottom: 20px; /* Add margin-bottom to create space below the button */
+    margin-top: 20px; 
+    margin-bottom: 20px;
   }
 
 .center-container {
@@ -41,6 +38,54 @@ padding-top: 3rem;
     height: 50vh; /*Adjust distance between Adoption Form Button and the Adoption Form*/
 }
   
-  .center-button {
-    margin-top: 20px; /* Adjust the margin based on your design */
+.center-button {
+  margin-top: 20px;
+}
+
+  .login-error {
+    color: red;
+    margin-bottom: 10px;
+  }
+
+  .signup-error {
+    color: red;
+    margin-bottom: 10px;
+  }
+
+  /* Apply the same styles for both login and signup forms */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 50px);
+  }
+  
+  .form-container .form {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px; 
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    border-radius: 8px; 
+    background: #f8f8f8; 
+    text-align: center;
+
+  }
+  
+  .form-container .form button {
+    display: block;
+    margin: 10px auto;
+    width: 70%; 
+    max-width: 300px; 
+    font-size: 1.2rem; 
+    padding: 12px; 
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .form-container {
+      padding: 20px;
+    }
+    .form-container .form {
+      padding: 10px;
+    }
   }

@@ -1,78 +1,72 @@
 import React, { useState } from 'react';
 import { useAuth } from './AuthContext';
-import LoggedinMessage from "./LoggedinMessage";
-import {
-  MDBContainer,
-  MDBInput,
-  MDBCheckbox,
-  MDBBtn,
-  MDBIcon
-}
-from 'mdb-react-ui-kit';
-
+import { Link } from 'react-router-dom';
+import { MDBContainer, MDBInput, MDBBtn } from 'mdb-react-ui-kit';
 
 const SignUpForm = () => {
   const [userName, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const { login, loggedIn } = useAuth();
+  const [signupError, setSignupError] = useState('');
+  const { login, loggedIn, logout } = useAuth();
 
-  if (loggedIn) {
-    return <p> Welcome! you are now logged in.</p>;
-  }
+  const useMock = import.meta.env.VITE_REACT_APP_USE_MOCK_API === 'true';
 
-  const handleSignUp = async () => {
-    login();
-      
+  const sendUserSignUpMock = async () => {
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    console.log(`Signup successful for username: ${userName}`);
+    login(userName);
   };
 
-  
-//   // Perform signup logic here (e.g., API request, user creation)
-const sendUserSignUp = async () => {
+  const sendUserSignUpAPI = async () => {
     try {
-      const response = await fetch( 'http://localhost:8080/api/user', {
+      const response = await fetch('http://localhost:8080/api/user', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({ userName, password }),
       });
-  
+
       if (response.ok) {
-        // Assuming the API returns some data upon successful signup (optional)
         const data = await response.json();
-        // Optionally handle the response data
         console.log('Signup successful:', data);
-        
-        // Perform login after successful signup (optional)
-        login();
+        login(userName);
+        setSignupError('');
       } else {
-        // Handle signup failure (display error message, etc.)
-        console.error('Signup failed');
+        setSignupError('Signup failed. Please check your details and try again.');
       }
     } catch (error) {
-      console.error('Error during signup:', error);
+      setSignupError('Error during signup. Please try again later.');
     }
   };
 
+  const handleSignUp = async (e) => {
+    e.preventDefault();
+    if (useMock) {
+      await sendUserSignUpMock();
+    } else {
+      await sendUserSignUpAPI();
+    }
+  };
+
+  if (loggedIn) {
+    return <h1>Thank you for signing up {userName}! You are now logged in.</h1>;
+  }
 
   return (
-    <div>
-      <h2>Sign Up</h2>
-      <form>
-        <label>
-          Username:
-          <input type="text" value={userName} onChange={(e) => setUsername(e.target.value)} />
-        </label>
-        <br />
-        <label>
-          Password:
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-        </label>
-        <br />
-        <button type="submit" onClick={sendUserSignUp}>
-          Sign Up
-        </button>
-      </form>
+    <div className="form-container">
+      <div className="form">
+        {signupError && <div className="signup-error">{signupError}</div>}
+        <h2>Sign Up for an Account</h2>
+        <MDBContainer className="p-3 my-5 d-flex flex-column w-50">
+        Username: <MDBInput wrapperClass='mb-4' id='userName' type='email' value={userName} onChange={(e) => setUsername(e.target.value)} placeholder="username" autoFocus={true}/>
+            Password: <MDBInput wrapperClass='mb-4'  id='password' type='password' value={password} onChange={(e) => setPassword(e.target.value)} placeholder="password" autoFocus={true}/>
+          <MDBBtn className="mb-4" onClick={handleSignUp}>Sign Up</MDBBtn>
+          <div className="text-center">
+            <p>Already a member? <Link to="/login">Log in</Link></p>
+          </div>
+        </MDBContainer>
+      </div>
     </div>
   );
 };
