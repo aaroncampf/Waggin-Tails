@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Dog Applications List</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <div th:replace="fragments :: page-header"></div>
+
+</head>
+<body>
+<div class="container">
+
+    <h2>Dog Applications list</h2>
+
+    <table class="table table-bordered table-dark">
+
+        <thead class="thead-light">
+        <tr>
+            <th>Application ID</th>
+            <th>DOG NAME</th>
+            <th>USER NAME</th>
+            <th>EMAIL</th>
+            <th>PHONE NUMBER</th>
+            <th>STREET ADDRESS</th>
+            <th>DOG CITY</th>
+            <th>STATE</th>
+            <th>ZIPCODE</th>
+            <th>HOME OWNERSHIP</th>
+            <th>TOTAL ADULTS</th>
+            <th>TOTAL CHILDREN</th>
+            <th>DOG STAYING PLACE WHEN ALONE</th>
+            <th>DOG STAY ALONE HOURS</th>
+            <th>DOG SLEEPING PLACE AT NIGHT</th>
+            <th>FINANCIALLY PREPARED?</th>
+            <th>APPROVED?</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="app : ${applications}">
+            <td th:text="${app.id}">APPLICATION ID</td>
+            <td th:text="${app.dog.name}">DOG NAME</td>
+            <td th:text="${app.fullName}">USER NAME</td>
+            <td th:text="${app.email}">EMAIL</td>
+            <td th:text="${app.phoneNumber}">CONTACT NUMBER</td>
+            <td th:text="${app.streetAddress}">STREET ADDRESS</td>
+            <td th:text="${app.city}">CITY</td>
+            <td th:text="${app.state}">STATE</td>
+            <td th:text="${app.zipcode}">ZIPCODE</td>
+
+            <td th:text="${app.homeOwnershipType}">HOME OWNERSHIP</td>
+            <td th:text="${app.totalAdults}">TOTAL ADULTS</td>
+            <td th:text="${app.totalChildren}">TOTAL CHILDREN</td>
+            <td th:text="${app.dogStayWhenNobodyHome}">DOG STAY PLACE</td>
+            <td th:text="${app.dogStayAloneHours}">DOG ALONE HOURS</td>
+            <td th:text="${app.dogSleepingPlace}">DOG SLEEPING PLACE</td>
+            <td th:text="${app.isFinanciallyPrepared}">FINANCIALLY PREPARED? </td>
+
+            <td th:text="${app.approved}">IS APPROVED? </td>
+
+<!--            <td><a th:href="@{'/app/update/' + ${app.id}}">Edit Application</a></td>-->
+            <td><a th:href="@{'/application/remove/' + ${app.id}}">Delete </a></td>
+
+        </tr>
+
+        </tbody>
+    </table>
+
+</div>
+
+</body>
+</html>

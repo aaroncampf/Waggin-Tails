@@ -16,7 +16,7 @@ import java.util.List;
 
 
 @Controller
-@RequestMapping("/adoptionApplication")
+@RequestMapping("/application")
 public class AdoptionApplicationController {
 
     @Autowired
@@ -55,7 +55,7 @@ public class AdoptionApplicationController {
 
 
     //Delete in CRUD-Get Mapping
-    @GetMapping("removeApplication/{id}")
+    @GetMapping("remove/{id}")
     public String removeApplication(@PathVariable("id") Integer id, Model model) {
         adoptionApplicationService.removeAdoptionApplication(id);
         return "redirect:/applications/list";

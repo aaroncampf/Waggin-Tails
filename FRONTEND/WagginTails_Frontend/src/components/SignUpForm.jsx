@@ -44,7 +44,6 @@ const SignUpForm = () => {
     e.preventDefault();
     if (useMock) {
       await sendUserSignUpMock();
-    } else {
       await sendUserSignUpAPI();
     }
   };
