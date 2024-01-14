@@ -9,6 +9,7 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 
 //user model class to define variable needs for user class, login
@@ -28,12 +29,12 @@ public class User {
     @NotEmpty(message = "Must Enter Username")
     @NotNull(message = "Must Enter Username")
     @Size(min = 3, max = 16)
-    private String userName;
+    private String username;
 
     @NotEmpty(message = "Must Enter Password")
     @NotNull(message = "Must Enter Password")
     @Size(min = 3, max = 16)
-    private String password;
+    private String pwHash;
 
 
     // empty user tostring
@@ -41,11 +42,11 @@ public class User {
     }
 
     // may need to refactor code for to string
-    public User(String email,String userName, String password) {
+    public User(String email,String username, String password) {
                 this.id = id;
                 this.email = email;
-                this.userName = userName;
-                this.password = password;
+                this.username = username;
+                this.pwHash = encoder.encode(password);
 
     }
 
@@ -65,19 +66,21 @@ public class User {
         this.email = email;
     }
 
-    public String getPassword() {
-        return password;
+//    public String getPwHash() {
+//        return pwHash;
+//    }
+//
+//    public void setPwHash(String pwHash) {
+//        this.pwHash = pwHash;
+//    }
+
+    public String getUsername() {
+        return username;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
+   public static final BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public boolean isMatchingPassword(String password){
+        return encoder.matches(password, pwHash);
     }
 }
