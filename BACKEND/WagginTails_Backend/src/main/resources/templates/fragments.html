@@ -22,13 +22,28 @@
     <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-dark p-4">
             <h4 class="text-white">Waggin Tails</h4>
+<!--            <th:block th:unless="${loggedIn}">-->
+<!--                <ul>-->
+<!--                <li><a class="navlink" href="/login">Log In</a></li>-->
+<!--                <li><a class="navlink" href="/register">Register</a></li>-->
+<!--                </ul>-->
+<!--            </th:block>-->
+                <div th:unless="${loggedIn}">
             <ul>
-                <li><a th:href="@{/dogs/add}">Add Dog</a></li>
-                <li><a th:href="@{/dogs/list}">Dog List</a></li>
+                <li><a th:href="@{/dog/add}">Add Dog</a></li>
+                <li><a th:href="@{/dog/list}">Dog List</a></li>
                 <li><a th:href="@{/application/list}">Dog ApplicationList</a></li>
-
+               <li><a class="navlink" href="/logout">Log Out</a></li>
             </ul>
-               </div>
+                </div>
+            <div th:if="${loggedIn}">
+                <ul>
+                    <li><a class="navlink" href="/login">Log In</a></li>
+                    <li><a class="navlink" href="/register">Register</a></li>
+                </ul>
+            </div>
+            </div>
+
     </div>
     <nav class="navbar navbar-dark bg-primary">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">

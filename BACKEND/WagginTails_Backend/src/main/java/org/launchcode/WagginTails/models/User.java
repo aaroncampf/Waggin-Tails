@@ -14,65 +14,20 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 //user model class to define variable needs for user class, login
 @Entity
-public class User {
+public class User extends AbstractEntity{
 
-
-    // ID annonation, generated value annotation to generated and increase id per user entry
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-
-
-    @Email
-    private String email;
-
-    @NotEmpty(message = "Must Enter Username")
-    @NotNull(message = "Must Enter Username")
-    @Size(min = 3, max = 16)
+    @NotNull
     private String username;
 
-    @NotEmpty(message = "Must Enter Password")
-    @NotNull(message = "Must Enter Password")
-    @Size(min = 3, max = 16)
+    @NotNull
     private String pwHash;
 
+    public User() {}
 
-    // empty user tostring
-    public User() {
+    public User(String username, String password) {
+        this.username = username;
+        this.pwHash = encoder.encode(password);
     }
-
-    // may need to refactor code for to string
-    public User(String email,String username, String password) {
-                this.id = id;
-                this.email = email;
-                this.username = username;
-                this.pwHash = encoder.encode(password);
-
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-//    public String getPwHash() {
-//        return pwHash;
-//    }
-//
-//    public void setPwHash(String pwHash) {
-//        this.pwHash = pwHash;
-//    }
 
     public String getUsername() {
         return username;
