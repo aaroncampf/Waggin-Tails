@@ -38,26 +38,19 @@
         </tr>
         </thead>
         <tbody>
-        <tr th:each="dog : ${dogs}">
-            <td th:text="${dog.id}">DOG ID</td>
-            <td th:text="${dog.name}">DOG NAME</td>
-            <td th:text="${dog.age}">DOG AGE</td>
-            <td th:text="${dog.breed}">DOG BREED</td>
-            <td th:text="${dog.color}">DOG COLOR</td>
-            <td th:text="${dog.natureDesc}">DOG NATURE</td>
-            <td th:text="${dog.dogProfilePhotoUrl}">DOG PROFILE URL</td>
-            <td th:text="${dog.photoOneUrl}">DOG PHOTO ONE</td>
-            <td th:text="${dog.photoTwoUrl}">DOG PHOTO TWO</td>
+        <tr th:each="user : ${users}">
+            <td th:text="${user.id}">DOG ID</td>
+            <td th:text="${user.username}">DOG NAME</td>
+<!--            <td th:text="${user.password}">DOG AGE</td>-->
 
 
-            <td><a th:href="@{'/dog/update/' + ${dog.id}}">Edit Dog</a></td>
-            <td><a th:href="@{'/dog/remove/' + ${dog.id}}">Delete</a></td>
+
+            <td><a th:href="@{'/users/remove/' + ${user.id}}">Delete</a></td>
 
         </tr>
 
         </tbody>
     </table>
-    <a th:href="@{add}"class="btn btn-primary" href="#" role="button">Add Dog</a>
 
 </div>
 
