@@ -34,7 +34,7 @@ public class AuthFilter implements HandlerInterceptor {
             return true;
         }
 
-        HttpSession session = request.getSession();;
+        HttpSession session = request.getSession();
         User user = authController.getUserFromSession(session);
 
         if(user != null){
