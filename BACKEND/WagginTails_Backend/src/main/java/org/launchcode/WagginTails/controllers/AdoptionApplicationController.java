@@ -58,7 +58,7 @@ public class AdoptionApplicationController {
     @GetMapping("remove/{id}")
     public String removeApplication(@PathVariable("id") Integer id, Model model) {
         adoptionApplicationService.removeAdoptionApplication(id);
-        return "redirect:/applications/list";
+        return "redirect:/application/list";
     }
 
 

@@ -40,6 +40,30 @@ padding-top: 3rem;
   
 .center-button {
   margin-top: 20px;
+  padding: 12px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.center-button:hover {
+  background-color: #535bf2;
+  color: #ffffff;
+  border-color: #535bf2;
+}
+
+.footer {
+  height: 50px;
+  background-color: #0a035b;
+  color: aliceblue;
+  font-size: larger;
+  align-items: center;
+  padding: 1rem;
+  text-align: center; /* Adjust alignment based on your preference */
 }
 
   .login-error {
@@ -83,7 +107,7 @@ padding-top: 3rem;
   /* Responsive adjustments */
   @media (max-width: 600px) {
     .form-container {
-      padding: 20px;
+      padding: 10px;
     }
     .form-container .form {
       padding: 10px;
