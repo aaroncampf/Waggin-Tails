@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { MDBContainer, MDBInput, MDBBtn } from 'mdb-react-ui-kit';
 
 const SignUpForm = () => {
-  const [userName, setUsername] = useState('');
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [signupError, setSignupError] = useState('');
   const { login, loggedIn, logout } = useAuth();
@@ -13,8 +13,8 @@ const SignUpForm = () => {
 
   const sendUserSignUpMock = async () => {
     await new Promise(resolve => setTimeout(resolve, 1000));
-    console.log(`Signup successful for username: ${userName}`);
-    login(userName);
+    console.log(`Signup successful for username: ${username}`);
+    login(username);
   };
 
   const sendUserSignUpAPI = async () => {
@@ -24,13 +24,13 @@ const SignUpForm = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ userName, password }),
+        body: JSON.stringify({ username, pwHash }),
       });
 
       if (response.ok) {
         const data = await response.json();
         console.log('Signup successful:', data);
-        login(userName);
+        login(username);
         setSignupError('');
       } else {
         setSignupError('Signup failed. Please check your details and try again.');
@@ -49,7 +49,7 @@ const SignUpForm = () => {
   };
 
   if (loggedIn) {
-    return <h1>Thank you for signing up {userName}! You are now logged in.</h1>;
+    return <h1>Thank you for signing up {username}! You are now logged in.</h1>;
   }
 
   return (
@@ -58,7 +58,7 @@ const SignUpForm = () => {
         {signupError && <div className="signup-error">{signupError}</div>}
         <h2>Sign Up for an Account</h2>
         <MDBContainer className="p-3 my-5 d-flex flex-column w-50">
-        Username: <MDBInput wrapperClass='mb-4' id='userName' type='email' value={userName} onChange={(e) => setUsername(e.target.value)} placeholder="username" autoFocus={true}/>
+        Username: <MDBInput wrapperClass='mb-4' id='userName' type='email' value={username} onChange={(e) => setUsername(e.target.value)} placeholder="username" autoFocus={true}/>
             Password: <MDBInput wrapperClass='mb-4'  id='password' type='password' value={password} onChange={(e) => setPassword(e.target.value)} placeholder="password" autoFocus={true}/>
           <MDBBtn className="mb-4" onClick={handleSignUp}>Sign Up</MDBBtn>
           <div className="text-center">

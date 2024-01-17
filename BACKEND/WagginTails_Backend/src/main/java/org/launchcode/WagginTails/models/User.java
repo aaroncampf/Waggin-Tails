@@ -9,75 +9,33 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 
 //user model class to define variable needs for user class, login
 @Entity
-public class User {
+public class User extends AbstractEntity{
 
+    @NotNull
+    private String username;
 
-    // ID annonation, generated value annotation to generated and increase id per user entry
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    @NotNull
+    private String pwHash;
 
+    public User() {}
 
-    @Email
-    private String email;
-
-    @NotEmpty(message = "Must Enter Username")
-    @NotNull(message = "Must Enter Username")
-    @Size(min = 3, max = 16)
-    private String userName;
-
-    @NotEmpty(message = "Must Enter Password")
-    @NotNull(message = "Must Enter Password")
-    @Size(min = 3, max = 16)
-    private String password;
-
-
-    // empty user tostring
-    public User() {
+    public User(String username, String password) {
+        this.username = username;
+        this.pwHash = encoder.encode(password);
     }
 
-    // may need to refactor code for to string
-    public User(String email,String userName, String password) {
-                this.id = id;
-                this.email = email;
-                this.userName = userName;
-                this.password = password;
-
+    public String getUsername() {
+        return username;
     }
 
-    public int getId() {
-        return id;
-    }
+   public static final BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public boolean isMatchingPassword(String password){
+        return encoder.matches(password, pwHash);
     }
 }
